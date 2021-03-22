@@ -1,5 +1,5 @@
 package Lab1
-import chisel3 . _
+import chisel3._
 
 class Exercise2 ( counterBits : UInt ) extends Module {
     val io = IO ( new Bundle {
@@ -11,8 +11,8 @@ class Exercise2 ( counterBits : UInt ) extends Module {
     
     when( count === max ) {
         count := 0.S
-    } .elsewhen( count === 8.S){
-        count:=0.S
+    //} //.elsewhen( count === 64.S){ //optional as the above one does the same work
+        //count:=0.S
     } .otherwise {
         count := count + 1.S 
     }   
