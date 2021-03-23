@@ -7,9 +7,9 @@ class Exercise3 ( size : Int , maxValue : Int ) extends Module {
     })
     
     def genCounter ( n : Int , max : Int ) = {
-        val count = RegInit (0.U(n.W) )
+        val count = RegInit (0.U(n.W))
         when ( count === max.asUInt ) {
-            count := 0. U
+            count := 0.U
         }.otherwise {
             count := count + 1. U
         }

@@ -1,0 +1,48 @@
+;buildInfoPackage: chisel3, version: 3.4.2, scalaVersion: 2.12.12, sbtVersion: 1.3.10
+circuit Task1_Lab2 : 
+  module Task1_Lab2 : 
+    input clock : Clock
+    input reset : UInt<1>
+    output io : {flip s0 : UInt<1>, flip s1 : UInt<1>, flip s2 : UInt<1>, out : UInt<32>}
+    
+    io.out <= UInt<1>("h00") @[Task1_Lab2.scala 15:11]
+    node _T = eq(io.s0, UInt<1>("h00")) @[Task1_Lab2.scala 17:15]
+    node _T_1 = eq(io.s1, UInt<1>("h00")) @[Task1_Lab2.scala 17:31]
+    node _T_2 = and(_T, _T_1) @[Task1_Lab2.scala 17:22]
+    node _T_3 = eq(io.s2, UInt<1>("h00")) @[Task1_Lab2.scala 17:47]
+    node _T_4 = and(_T_2, _T_3) @[Task1_Lab2.scala 17:38]
+    when _T_4 : @[Task1_Lab2.scala 17:55]
+      io.out <= UInt<1>("h00") @[Task1_Lab2.scala 18:15]
+      skip @[Task1_Lab2.scala 17:55]
+    else : @[Task1_Lab2.scala 19:62]
+      node _T_5 = eq(io.s0, UInt<1>("h01")) @[Task1_Lab2.scala 19:22]
+      node _T_6 = eq(io.s1, UInt<1>("h00")) @[Task1_Lab2.scala 19:38]
+      node _T_7 = and(_T_5, _T_6) @[Task1_Lab2.scala 19:30]
+      node _T_8 = eq(io.s2, UInt<1>("h00")) @[Task1_Lab2.scala 19:54]
+      node _T_9 = and(_T_7, _T_8) @[Task1_Lab2.scala 19:45]
+      when _T_9 : @[Task1_Lab2.scala 19:62]
+        io.out <= UInt<4>("h08") @[Task1_Lab2.scala 20:15]
+        skip @[Task1_Lab2.scala 19:62]
+      else : @[Task1_Lab2.scala 21:65]
+        node _T_10 = eq(io.s2, UInt<1>("h00")) @[Task1_Lab2.scala 21:22]
+        node _T_11 = eq(io.s1, UInt<1>("h01")) @[Task1_Lab2.scala 21:39]
+        node _T_12 = and(_T_10, _T_11) @[Task1_Lab2.scala 21:30]
+        node _T_13 = eq(io.s0, UInt<1>("h00")) @[Task1_Lab2.scala 21:56]
+        node _T_14 = and(_T_12, _T_13) @[Task1_Lab2.scala 21:47]
+        when _T_14 : @[Task1_Lab2.scala 21:65]
+          io.out <= UInt<5>("h010") @[Task1_Lab2.scala 22:15]
+          skip @[Task1_Lab2.scala 21:65]
+        else : @[Task1_Lab2.scala 23:57]
+          node _T_15 = eq(io.s2, UInt<1>("h00")) @[Task1_Lab2.scala 23:22]
+          node _T_16 = and(io.s0, io.s1) @[Task1_Lab2.scala 23:40]
+          node _T_17 = eq(_T_16, UInt<1>("h01")) @[Task1_Lab2.scala 23:49]
+          node _T_18 = and(_T_15, _T_17) @[Task1_Lab2.scala 23:30]
+          when _T_18 : @[Task1_Lab2.scala 23:57]
+            io.out <= UInt<5>("h018") @[Task1_Lab2.scala 24:15]
+            skip @[Task1_Lab2.scala 23:57]
+          else : @[Task1_Lab2.scala 25:30]
+            node _T_19 = eq(io.s2, UInt<1>("h01")) @[Task1_Lab2.scala 25:22]
+            when _T_19 : @[Task1_Lab2.scala 25:30]
+              io.out <= UInt<6>("h020") @[Task1_Lab2.scala 26:15]
+              skip @[Task1_Lab2.scala 25:30]
+    

@@ -8,14 +8,27 @@ class Task2 ( size : Int , maxValue : Int ) extends Module {
     
     def genCounter ( n : Int , max : Int ) = {
         val count = RegInit (0.U(n.W) )
+        val count_result = RegInit (0.U(n.W) )
         when ( count === max.asUInt ) {
-            count := 0. U
             io.result :=1.B
+            when (count_result === count){
+                count_result := count_result-1.U
+            }.elsewhen(count_result === 0.U){
+                io.result:=1.B
+                count := 0.U
+            }.otherwise{
+                count_result := count_result-1.U
+                io.result:=0.B
+            }
+            //val count_down = counterdown(max.asUInt,count)
+            //count:=0.U
         }.elsewhen ( count === 0.U){
             count := count + 1. U
+            count_result := count+1.U
             io.result :=1.B
         }.otherwise {
             count := count + 1. U
+            count_result := count+1.U
             io.result :=0.B
         }
         count

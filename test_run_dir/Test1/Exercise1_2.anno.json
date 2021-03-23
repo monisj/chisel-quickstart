@@ -1,0 +1,23 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir/Test1/Exercise1_2.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Exercise1_2|Exercise1_2>io_out",
+    "sources":[
+      "~Exercise1_2|Exercise1_2>io_in_A",
+      "~Exercise1_2|Exercise1_2>io_select",
+      "~Exercise1_2|Exercise1_2>io_in_B"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/Test1"
+  }
+]

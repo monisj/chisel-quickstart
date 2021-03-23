@@ -52,3 +52,17 @@
 1616441592137:testOnly Lab2.EX_test1 -- -DwriteVcd=1
 1616441599284:testOnly Lab2.EX_tests1 -- -DwriteVcd=1
 1616441614349:testOnly Lab2.EX_test1 -- -DwriteVcd=1
+1616441774247:test
+1616441794783:testOnly Lab2.EX_test1 -- -DwriteVcd=1
+1616441929909:testOnly Lab2.Ex_test1 -- -DwriteVcd=1
+1616443624080:testOnly Lab2.Ex_test2 -- -DwriteVcd=1
+1616445262773:testOnly Lab2.Ex_test3 -- -DwriteVcd=1
+1616446025265:testOnly Lab2.Ex_test2 -- -DwriteVcd=1
+1616446028361:testOnly Lab2.Ex_test3 -- -DwriteVcd=1
+1616492017734:testOnly Lab2.Task1_test -- -DwriteVcd=1
+1616494106964:testOnly Lab2.Task2_test -- -DwriteVcd=1
+1616496423224:testOnly Lab2.Task1_test -- -DwriteVcd=1
+1616496599289:testOnly Lab2.Task2_test -- -DwriteVcd=1
+1616520650956:testOnly Lab1.Ex_test3 -- -DwriteVcd=1
+1616522121388:testOnly Lab2.Ex_test3 -- -DwriteVcd=1
+1616524967568:testOnly Lab1.Task2_tests -- -DwriteVcd=1
