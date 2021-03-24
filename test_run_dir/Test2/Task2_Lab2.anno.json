@@ -7,37 +7,37 @@
     "class":"firrtl.transforms.CombinationalPath",
     "sink":"~Task2_Lab2|Task2_Lab2>io_out_2",
     "sources":[
-      "~Task2_Lab2|Task2_Lab2>io_in_1",
-      "~Task2_Lab2|Task2_Lab2>io_in_0",
+      "~Task2_Lab2|Task2_Lab2>io_in_2",
+      "~Task2_Lab2|Task2_Lab2>io_in_3",
       "~Task2_Lab2|Task2_Lab2>io_sel_0",
       "~Task2_Lab2|Task2_Lab2>io_sel_1",
       "~Task2_Lab2|Task2_Lab2>io_shift_type",
-      "~Task2_Lab2|Task2_Lab2>io_in_3",
-      "~Task2_Lab2|Task2_Lab2>io_in_2"
+      "~Task2_Lab2|Task2_Lab2>io_in_0",
+      "~Task2_Lab2|Task2_Lab2>io_in_1"
     ]
   },
   {
     "class":"firrtl.transforms.CombinationalPath",
     "sink":"~Task2_Lab2|Task2_Lab2>io_out_3",
     "sources":[
-      "~Task2_Lab2|Task2_Lab2>io_in_0",
+      "~Task2_Lab2|Task2_Lab2>io_in_3",
       "~Task2_Lab2|Task2_Lab2>io_sel_0",
       "~Task2_Lab2|Task2_Lab2>io_shift_type",
-      "~Task2_Lab2|Task2_Lab2>io_in_3",
+      "~Task2_Lab2|Task2_Lab2>io_in_0",
       "~Task2_Lab2|Task2_Lab2>io_sel_1",
-      "~Task2_Lab2|Task2_Lab2>io_in_2",
-      "~Task2_Lab2|Task2_Lab2>io_in_1"
+      "~Task2_Lab2|Task2_Lab2>io_in_1",
+      "~Task2_Lab2|Task2_Lab2>io_in_2"
     ]
   },
   {
     "class":"firrtl.transforms.CombinationalPath",
     "sink":"~Task2_Lab2|Task2_Lab2>io_out_0",
     "sources":[
-      "~Task2_Lab2|Task2_Lab2>io_in_3",
-      "~Task2_Lab2|Task2_Lab2>io_in_2",
-      "~Task2_Lab2|Task2_Lab2>io_in_1",
-      "~Task2_Lab2|Task2_Lab2>io_sel_0",
       "~Task2_Lab2|Task2_Lab2>io_in_0",
+      "~Task2_Lab2|Task2_Lab2>io_in_1",
+      "~Task2_Lab2|Task2_Lab2>io_in_2",
+      "~Task2_Lab2|Task2_Lab2>io_sel_0",
+      "~Task2_Lab2|Task2_Lab2>io_in_3",
       "~Task2_Lab2|Task2_Lab2>io_sel_1"
     ]
   },
@@ -45,13 +45,13 @@
     "class":"firrtl.transforms.CombinationalPath",
     "sink":"~Task2_Lab2|Task2_Lab2>io_out_1",
     "sources":[
-      "~Task2_Lab2|Task2_Lab2>io_in_2",
       "~Task2_Lab2|Task2_Lab2>io_in_1",
-      "~Task2_Lab2|Task2_Lab2>io_in_0",
+      "~Task2_Lab2|Task2_Lab2>io_in_2",
+      "~Task2_Lab2|Task2_Lab2>io_in_3",
       "~Task2_Lab2|Task2_Lab2>io_sel_0",
       "~Task2_Lab2|Task2_Lab2>io_sel_1",
       "~Task2_Lab2|Task2_Lab2>io_shift_type",
-      "~Task2_Lab2|Task2_Lab2>io_in_3"
+      "~Task2_Lab2|Task2_Lab2>io_in_0"
     ]
   },
   {
