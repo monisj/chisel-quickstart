@@ -5,7 +5,7 @@ import chisel3.tester._
 import org.scalatest.FreeSpec
 import chisel3.experimental.BundleLiterals._
 
-class Ex_tests2 extends FreeSpec with ChiselScalatestTester{
+class Ex_test2 extends FreeSpec with ChiselScalatestTester{
     "Test1" in {
         test(new Exercise2(4.U)){c =>
             c.clock.step(500)

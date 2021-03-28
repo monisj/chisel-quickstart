@@ -11,7 +11,7 @@ class Exercise1_Lab2 extends Module {
     val sel_A = 1.B
     val sel_B = 1.B
     io.out:=0.U
-    when(io.select & sel_A  === 1.B){
+    when(io.select===1.B){
         io.out:=io.in_A
     }.elsewhen(~io.select === 1.B){
         io.out:=io.in_B

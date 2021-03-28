@@ -6,13 +6,13 @@ class Exercise2 ( counterBits : UInt ) extends Module {
         val result = Output(Bool()) 
     })
     val max = (1.S << counterBits ) - 1.S
-    val count = RegInit (0.S(16.W))
+    val count = RegInit (0.S(4.W))
     println(s"$max")
     
-    when( count === max ) {
+    when( count === max) {
         count := 0.S
-    //} //.elsewhen( count === 64.S){ //optional as the above one does the same work
-        //count:=0.S
+    }.elsewhen(count(15.U) === 1.B){
+            count := 0.S
     } .otherwise {
         count := count + 1.S 
     }   
