@@ -15,17 +15,17 @@ val out = Valid(Output(UInt(4.W)))
 class Task3_Lab3 extends Module {
 val io = IO ( new LM_IO_Interface_decoder_with_valid )
     io.out.valid:=false.B
-    when ( io.in === "b00".U ) {
+    when ( io.in === "b00".U ){
         io.out.bits := "b0001".U
-        io.out.valid:= io.out.bits === 1.U && false.B
+        io.out.valid:= 1.B
     }.elsewhen (io.in === "b01".U ) {
         io.out.bits := "b0010".U
-        io.out.valid:= io.out.bits ===2.U && true.B
+        io.out.valid:= 1.B
     }.elsewhen ( io.in === "b10".U ) {
         io.out.bits := "b0100".U
-        io.out.valid:= io.out.bits === 4.U && true.B
+        io.out.valid:= 1.B
     }.otherwise {
         io.out.bits := "b1000".U
-        io.out.valid:= io.out.bits === 8.U && true.B
+        io.out.valid:= 1.B
     }
 }
