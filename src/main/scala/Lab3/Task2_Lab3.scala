@@ -4,7 +4,7 @@ import chisel3 . util . _
 
 
 class LM_IO_Interface_ImmdValGen extends Bundle {
-    val Instruction = Input ( UInt (32. W ) )
+    val Instruction = Input (UInt(32.W))
     val PC = Input (UInt (32.W))
     val I_Immediate= Output(SInt (32.W))
     val S_Immediate= Output(SInt (32.W))
