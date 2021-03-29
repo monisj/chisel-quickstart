@@ -8,15 +8,4 @@
 [0m[[0m[31merror[0m] [0m[0m required: chisel3.UInt[0m
 [0m[[0m[31merror[0m] [0m[0m            c.io.arg_y.poke(8.S)[0m
 [0m[[0m[31merror[0m] [0m[0m                              ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab3/Task1_test.scala:13:32: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : chisel3.UInt[0m
-[0m[[0m[31merror[0m] [0m[0m required: chisel3.Bool[0m
-[0m[[0m[31merror[0m] [0m[0m            c.io.branch.poke(1.U)[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab3/Task1_test.scala:14:18: value func3 is not a member of Lab3.LM_IO_Interface_BranchControl[0m
-[0m[[0m[31merror[0m] [0m[0m            c.io.func3.poke("b000".U)[0m
-[0m[[0m[31merror[0m] [0m[0m                 ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab3/Task1_test.scala:15:18: value func7 is not a member of Lab3.LM_IO_Interface_BranchControl[0m
-[0m[[0m[31merror[0m] [0m[0m            c.io.func7.poke(0.U)[0m
-[0m[[0m[31merror[0m] [0m[0m                 ^[0m
-[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

@@ -79,3 +79,5 @@
 1616932376645:testOnly Lab3.Task2_test -- -DwriteVcd=1
 1616932539485:testOnly Lab3.Task3_test -- -DwriteVcd=1\\
 1616932544363:testOnly Lab3.Task3_test -- -DwriteVcd=1
+1617012469504:testOnly Lab3.Task1_test -- -DwriteVcd=1\\
+1617012517104:testOnly Lab3.Task1_test -- -DwriteVcd=1
