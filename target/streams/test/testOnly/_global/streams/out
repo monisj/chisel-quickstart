@@ -1,10 +1,10 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(Lab3.Task1_test, org.scalatest.tools.Framework$$anon$1@2871ce8, false, [SuiteSelector])[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mTask1_test:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- Test3[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 3 seconds, 413 milliseconds.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(Lab4.Ex_test1, org.scalatest.tools.Framework$$anon$1@4d70fe8f, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx_test1:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- Test4[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 3 seconds, 93 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 1[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Lab3.Task1_test[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Lab4.Ex_test1[0m
