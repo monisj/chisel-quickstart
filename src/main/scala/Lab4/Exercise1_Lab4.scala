@@ -1,126 +1,43 @@
 package Lab4
 import chisel3._
 import chisel3.util._
-import scala.util.Random
 
-class ALU extends Bundle{
-		val A=Input(SInt(32.W))
-		val B=Input(SInt(32.W))
-		val x=Output(SInt(32.W))
-		val AluBranch = Output(Bool())
-		val Aluop=Input(UInt(5.W))
-		
-			
-	}
+trait Config {
+// word length configuration parameter
+val WLEN= 32
+// ALU operation control signal width
+val ALUOP_SIG_LEN = 4
+}
 
-class Exercise1_Lab4 extends Module{
-    val io = IO(new ALU)
-		io.x := 0.S
-		switch ( io.Aluop ) {
-        is ( "b00000".U ) {
-            io.x:=io.A+io.B
-        }
-        is ("b01001".U){
-  			 io.x:=io.A * io.B          
-        }
-        is ("b00001".U) {
-            val sbt = io.A
-			val sbt3 = io.B(4,0)
-			val sbt4 = sbt << sbt3
-			val sbt5 = sbt4
-			io.x := sbt5
-        }
-        is ("b11111".U) {
-            io.x:=io.A
-        }
-        is ("b00010".U) {
-            when(io.A < io.B){
-			io.x := 1.S
-			}.otherwise{
-			io.x := 0.S
-			}
-        }
-        is ("b00011".U) {
-            val a1 = io.A
-			val b1 = io.B
-			when(a1 < b1){
-				io.x := 1.S
-			}.otherwise{
-				io.x := 0.S
-			}
-        }
-        is ("b10110".U) {
-            val a1 = io.A
-			val b1 = io.B
-			when(a1 < b1){
-				io.x := 1.S
-			}.otherwise{
-				io.x := 0.S
-			}
-        }
-        is ("b00100".U) {
-            io.x := io.A ^ io.B
-        }
-        is ("b00101".U) {
-            val shift = io.A >> io.B(4,0)
-		    io.x := shift
-        }
-        is ("b01101".U) {
-            val shift = io.A >> io.B(4,0)
-		    io.x := shift
-        }
-        is ("b00110".U){
-            io.x := io.A | io.B
-        }
-		is ("b00111".U) {
-            io.x := io.A & io.B
-        }
-        is ("b01000".U){
-            io.x := io.A - io.B
-        }
-		is ("b10000".U){
-           when(io.A === io.B){
-				io.x := 1.S
-			}.otherwise{
-				io.x := 0.S
-			} 
-        }
-        is ("b10001".U){
-            when(io.A === io.B){
-				io.x := 1.S
-			}.otherwise{
-				io.x := 0.S
-			}
-        }
-        is ("b10100".U) {
-            when(io.A < io.B){
-				io.x := 1.S
-			}.otherwise{
-				io.x := 0.S
-			}
-        }
-        is ("b10101".U) {
-            when(io.A >= io.B){
-				io.x := 1.S
-			}.otherwise{
-				io.x := 0.S
-			}
-        }
-		is ("b10111".U) {
-            val a3 = io.A.asUInt
-			val b3 = io.B.asUInt
-			when(a3 >= b3){
-				io.x := 1.S
-			}.otherwise{
-				io.x := 0.S
-			}
-        }
-	}
-		when(io.Aluop(4,3) === "b10".U && io.x === 1.S){
-		io.AluBranch := 1.B
-		}.otherwise{
-		io.AluBranch := 0.B
-		}	
+import ALUOP . _
+class ALUIO extends Bundle with Config {
+        val in_A= Input ( UInt ( WLEN . W ) )
+        val in_B= Input ( UInt ( WLEN . W ) )
+        val alu_Op= Input ( UInt ( ALUOP_SIG_LEN . W ) )
+        val out= Output ( UInt ( WLEN . W ) )
+        val sum= Output ( UInt ( WLEN . W ) )
+}
 
-		
-}		
+class Exercise1_Lab4 extends Module with Config {
+    val io = IO ( new ALUIO )
+        val sum= io . in_A + Mux ( io . alu_Op (0) , - io . in_B , io . in_B )
+        val cmp= Mux ( io . in_A ( WLEN -1) === io . in_B ( WLEN -1) , sum ( WLEN -1) ,
+        Mux ( io . alu_Op (1) , io . in_B ( WLEN -1) , io . in_A ( WLEN -1) ) )
+        
+        val shamt =io . in_B (4 ,0).asUInt
+        val shin = Mux ( io . alu_Op (3) , io . in_A , Reverse ( io . in_A ) )
+        val shiftr = ( Cat ( io . alu_Op (0) && shin ( WLEN -1) , shin ) . asSInt >> shamt ) (WLEN -1 , 0)
+        val shiftl = Reverse ( shiftr )
+        val out =
+        Mux ( io.alu_Op === ALU_ADD || io . alu_Op === ALU_SUB , sum ,
+        Mux ( io. alu_Op === ALU_SLT || io . alu_Op === ALU_SLTU , cmp ,
+        Mux ( io . alu_Op === ALU_SRA || io . alu_Op === ALU_SRL , shiftr ,
+        Mux ( io . alu_Op === ALU_SLL , shiftl ,
+        Mux ( io . alu_Op === ALU_AND , ( io . in_A & io . in_B ) ,
+        Mux ( io . alu_Op === ALU_OR , ( io . in_A | io . in_B ) ,
+        Mux ( io . alu_Op === ALU_XOR , ( io . in_A ^ io . in_B ) ,
+        Mux ( io . alu_Op === ALU_COPY_A , io . in_A ,
+        Mux ( io . alu_Op === ALU_COPY_A , io . in_B , 0. U ) ) ) ) ) ) ) ) )
+    io . out := out
+io . sum := sum
+}

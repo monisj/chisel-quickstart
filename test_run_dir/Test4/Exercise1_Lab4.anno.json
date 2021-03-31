@@ -5,21 +5,20 @@
   },
   {
     "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~Exercise1_Lab4|Exercise1_Lab4>io_AluBranch",
+    "sink":"~Exercise1_Lab4|Exercise1_Lab4>io_sum",
     "sources":[
-      "~Exercise1_Lab4|Exercise1_Lab4>io_x",
-      "~Exercise1_Lab4|Exercise1_Lab4>io_Aluop",
-      "~Exercise1_Lab4|Exercise1_Lab4>io_A",
-      "~Exercise1_Lab4|Exercise1_Lab4>io_B"
+      "~Exercise1_Lab4|Exercise1_Lab4>io_in_A",
+      "~Exercise1_Lab4|Exercise1_Lab4>io_in_B",
+      "~Exercise1_Lab4|Exercise1_Lab4>io_alu_Op"
     ]
   },
   {
     "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~Exercise1_Lab4|Exercise1_Lab4>io_x",
+    "sink":"~Exercise1_Lab4|Exercise1_Lab4>io_out",
     "sources":[
-      "~Exercise1_Lab4|Exercise1_Lab4>io_Aluop",
-      "~Exercise1_Lab4|Exercise1_Lab4>io_A",
-      "~Exercise1_Lab4|Exercise1_Lab4>io_B"
+      "~Exercise1_Lab4|Exercise1_Lab4>io_alu_Op",
+      "~Exercise1_Lab4|Exercise1_Lab4>io_in_A",
+      "~Exercise1_Lab4|Exercise1_Lab4>io_in_B"
     ]
   },
   {
