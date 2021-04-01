@@ -59,7 +59,7 @@ when(opcode === 35.U){
 }.elsewhen(opcode === 111.U){
 	io.immd_se := UJ_Immediate
 }.elsewhen(opcode === 23.U){
-	io.immd_se:= UJ_Immediate
+	io.immd_se:= U_Immediate
 }.elsewhen(( opcode === 19.U) || (opcode === 27.U) || (opcode === 115.U)){ 
 	io.immd_se:= I_Immediate
 }

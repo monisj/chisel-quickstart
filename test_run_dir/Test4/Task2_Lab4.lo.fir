@@ -68,8 +68,8 @@ circuit Task2_Lab4 :
     node _T_7 = eq(opcode, UInt<7>("h73")) @[Task2_lab4.scala 63:63]
     node _T_8 = or(_T_6, _T_7) @[Task2_lab4.scala 63:52]
     node _GEN_0 = mux(_T_8, I_Immediate, asSInt(UInt<1>("h0"))) @[Task2_lab4.scala 63:74 Task2_lab4.scala 64:19 Task2_lab4.scala 54:11]
-    node _GEN_1 = mux(_T_3, UJ_Immediate, _GEN_0) @[Task2_lab4.scala 61:28 Task2_lab4.scala 62:19]
+    node _GEN_1 = mux(_T_3, U_Immediate, _GEN_0) @[Task2_lab4.scala 61:28 Task2_lab4.scala 62:19]
     node _GEN_2 = mux(_T_2, UJ_Immediate, _GEN_1) @[Task2_lab4.scala 59:29 Task2_lab4.scala 60:20]
     node _GEN_3 = mux(_T_1, SB_Immediate, _GEN_2) @[Task2_lab4.scala 57:28 Task2_lab4.scala 58:20]
     node _GEN_4 = mux(_T, S_Immediate, _GEN_3) @[Task2_lab4.scala 55:22 Task2_lab4.scala 56:20]
-    io_immd_se <= _GEN_4
+    io_immd_se <= asSInt(bits(_GEN_4, 31, 0))

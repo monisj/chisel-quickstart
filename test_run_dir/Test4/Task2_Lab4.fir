@@ -75,7 +75,7 @@ circuit Task2_Lab4 :
         else : @[Task2_lab4.scala 61:28]
           node _T_3 = eq(opcode, UInt<5>("h017")) @[Task2_lab4.scala 61:19]
           when _T_3 : @[Task2_lab4.scala 61:28]
-            io.immd_se <= UJ_Immediate @[Task2_lab4.scala 62:19]
+            io.immd_se <= U_Immediate @[Task2_lab4.scala 62:19]
             skip @[Task2_lab4.scala 61:28]
           else : @[Task2_lab4.scala 63:74]
             node _T_4 = eq(opcode, UInt<5>("h013")) @[Task2_lab4.scala 63:21]
