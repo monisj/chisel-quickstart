@@ -1,9 +1,11 @@
 package Lab5
 import chisel3._
 import chisel3.util._
-// your code for Transaction_in class
-// your code for Transaction_out class
+
+class Transaction_In [T <: Data ](gen1: T) extends Bundle
+
+class Transaction_Out [T <:Data ](gen2:T) extends Bundle
+
 class Router [ T <: Data ]( gen : T ) extends Module {
-// your code begin
-// your code end
+
 }
