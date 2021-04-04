@@ -1,4 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab4/Immediate_test.scala:9:7: class Immediate_test needs to be abstract, since method io in class LegacyModule of type => chisel3.Record is not defined[0m
-[0m[[0m[31merror[0m] [0m[0mclass Immediate_test extends Module{[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab5/Task1_Lab5.scala:10:31: not found: value Width[0m
+[0m[[0m[31merror[0m] [0m[0m        val in_0 = Input(UInt(Width.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab5/Task1_Lab5.scala:11:31: not found: value Width[0m
+[0m[[0m[31merror[0m] [0m[0m        val in_1 = Input(UInt(Width.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab5/Task1_Lab5.scala:12:35: not found: value Width[0m
+[0m[[0m[31merror[0m] [0m[0m        val sum_out = Output(UInt(Width.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
