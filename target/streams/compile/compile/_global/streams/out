@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab5/Task2_Lab5.scala:9:7: class Router needs to be abstract, since method io in class LegacyModule of type => chisel3.Record is not defined[0m
-[0m[[0m[31merror[0m] [0m[0mclass Router [ T <: Data ]( gen : T ) extends Module {[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab5/Task3_Lab5.scala:14:12: value asSInt is not a member of type parameter T[0m
+[0m[[0m[31merror[0m] [0m[0m    io.out.asSInt() := Mux2_to_1 ( io.in2 , io.in1 , io.sel )[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
