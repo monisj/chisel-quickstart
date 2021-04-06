@@ -3,8 +3,8 @@ circuit Task2_Lab5 :
   module Task2_Lab5 : 
     input clock : Clock
     input reset : UInt<1>
-    output io : {flip in : UInt<32>, flip sel : UInt<1>, flip address : UInt<10>, out : UInt<32>}
+    output io : {flip in : {data_packet : UInt<32>, address : UInt<10>}, out : {data_packet : UInt<32>, address : UInt<10>}}
     
-    node _io_out_T = mux(io.sel, io.in, io.address) @[Task2_Lab5.scala 13:18]
-    io.out <= _io_out_T @[Task2_Lab5.scala 13:12]
+    io.out.address <= io.in.address @[Task2_Lab5.scala 17:12]
+    io.out.data_packet <= io.in.data_packet @[Task2_Lab5.scala 17:12]
     

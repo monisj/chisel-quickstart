@@ -1,4 +1,13 @@
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab5/Task2_test.scala:18:5: ')' expected but '}' found.[0m
-[0m[[0m[31merror[0m] [0m[0m    }[0m
-[0m[[0m[31merror[0m] [0m[0m    ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab5/Task2_test.scala:11:18: value data_packet is not a member of chisel3.Bundle{val in: Lab5.Transaction[chisel3.UInt]; val out: Lab5.Transaction[chisel3.UInt]}[0m
+[0m[[0m[31merror[0m] [0m[0m            c.io.data_packet.poke(32.U)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab5/Task2_test.scala:12:18: value address is not a member of chisel3.Bundle{val in: Lab5.Transaction[chisel3.UInt]; val out: Lab5.Transaction[chisel3.UInt]}[0m
+[0m[[0m[31merror[0m] [0m[0m            c.io.address.poke(2.U)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab5/Task2_test.scala:14:18: value address is not a member of chisel3.Bundle{val in: Lab5.Transaction[chisel3.UInt]; val out: Lab5.Transaction[chisel3.UInt]}[0m
+[0m[[0m[31merror[0m] [0m[0m            c.io.address.expect(2.U)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab5/Task2_test.scala:15:18: value data_packet is not a member of chisel3.Bundle{val in: Lab5.Transaction[chisel3.UInt]; val out: Lab5.Transaction[chisel3.UInt]}[0m
+[0m[[0m[31merror[0m] [0m[0m            c.io.data_packet.expect(32.U)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m

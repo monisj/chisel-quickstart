@@ -5,11 +5,16 @@
   },
   {
     "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~Task2_Lab5|Task2_Lab5>io_out",
+    "sink":"~Task2_Lab5|Task2_Lab5>io_out_data_packet",
     "sources":[
-      "~Task2_Lab5|Task2_Lab5>io_sel",
-      "~Task2_Lab5|Task2_Lab5>io_in",
-      "~Task2_Lab5|Task2_Lab5>io_address"
+      "~Task2_Lab5|Task2_Lab5>io_in_data_packet"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Task2_Lab5|Task2_Lab5>io_out_address",
+    "sources":[
+      "~Task2_Lab5|Task2_Lab5>io_in_address"
     ]
   },
   {

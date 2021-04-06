@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab5/Task2_Lab5.scala:12:8: value out is not a member of Lab5.Transaction_In[T][0m
-[0m[[0m[31merror[0m] [0m[0m    io.out := Mux(io.sel,io.in,io.address)[0m
-[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab5/Exercise3_Lab5.scala:11:21: not found: value b[0m
+[0m[[0m[31merror[0m] [0m[0m        io.out:=Map(b -> io.in.reduce(op))[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

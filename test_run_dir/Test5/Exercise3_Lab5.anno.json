@@ -12,6 +12,14 @@
     ]
   },
   {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Exercise3_Lab5|Exercise3_Lab5>io_out_0",
+    "sources":[
+      "~Exercise3_Lab5|Exercise3_Lab5>io_in_0",
+      "~Exercise3_Lab5|Exercise3_Lab5>io_in_1"
+    ]
+  },
+  {
     "class":"firrtl.EmitCircuitAnnotation",
     "emitter":"firrtl.LowFirrtlEmitter"
   },

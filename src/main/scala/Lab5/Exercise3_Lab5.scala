@@ -6,8 +6,10 @@ class Exercise3_Lab5 [ T <: Data ]( n : Int , generic : T ) ( op : (T , T ) => T
     require ( n > 0) // " reduce only works on non - empty Vecs "
         val io = IO ( new Bundle {
             val in = Input ( Vec (n , generic ))
-            val out = Output (Vec(2,generic))
+            val out = Output (Vec(n,generic))
         })
-        io.out(0):=0.U
-        io.out(1) := io.in.reduce(op)
+        for (i <- 0 until n){
+        io.out(i) := io.in.reduce(op)
+    }
+    //io.out(n-1) := io.in.reduce(op)
 }
