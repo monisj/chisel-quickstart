@@ -3,9 +3,15 @@ circuit Exercise1_Lab6 :
   module Exercise1_Lab6 : 
     input clock : Clock
     input reset : UInt<1>
-    output io : {flip in : UInt<4>, out : UInt<4>}
+    output io : {flip in : UInt<4>[4], out : UInt<4>}
     
-    reg state : UInt<4>, clock with : (reset => (reset, UInt<4>("h04"))) @[Exercise1_Lab6.scala 22:25]
-    state <= io.in @[Exercise1_Lab6.scala 23:10]
-    io.out <= state @[Exercise1_Lab6.scala 24:11]
+    reg register : UInt<32>[32], clock @[Exercise1_Lab6.scala 22:23]
+    register[0] <= io.in[0] @[Exercise1_Lab6.scala 24:20]
+    register[1] <= io.in[1] @[Exercise1_Lab6.scala 24:20]
+    register[2] <= io.in[2] @[Exercise1_Lab6.scala 24:20]
+    register[3] <= io.in[3] @[Exercise1_Lab6.scala 24:20]
+    io.out <= register[0] @[Exercise1_Lab6.scala 28:15]
+    io.out <= register[1] @[Exercise1_Lab6.scala 28:15]
+    io.out <= register[2] @[Exercise1_Lab6.scala 28:15]
+    io.out <= register[3] @[Exercise1_Lab6.scala 28:15]
     

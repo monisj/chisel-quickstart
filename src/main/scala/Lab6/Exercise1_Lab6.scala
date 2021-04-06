@@ -3,8 +3,8 @@ import chisel3._
 import chisel3.util._
 
 
-class shift_register extends Bundle {
-val in = Input (UInt(4.W))
+class shift_register(n:Int) extends Bundle {
+val in = Vec(n,Input (UInt(4.W)))
 val out = Output ( UInt (4. W ) )    
 }
 
@@ -18,9 +18,15 @@ val out = Output ( UInt (4. W ) )
 
 
 class Exercise1_Lab6(n:Int) extends Module{
-    val io = IO (new shift_register)
-    val state = RegInit (n.U(4.W))
-    state:= io.in
-    io.out:=state
+    val io = IO (new shift_register(n))
+    val register = Reg(Vec(32,UInt(32.W)))
+    for (i <- 0 until n){
+        register(i):=io.in(i)
+    }
+    //val state = 0.U
+    for (i <- 0 until n){
+        io.out:=register(i)
+    }
+    //io.out:=state
     
 }

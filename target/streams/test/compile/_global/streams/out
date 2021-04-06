@@ -1,6 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab6/Ex_test1.scala:11:28: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : chisel3.UInt[0m
-[0m[[0m[31merror[0m] [0m[0m required: chisel3.Bool[0m
-[0m[[0m[31merror[0m] [0m[0m            c.io.in.poke(1.U)[0m
-[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab6/Ex_test2.scala:10:18: not found: type Exercise2_Lab6[0m
+[0m[[0m[31merror[0m] [0m[0m        test(new Exercise2_Lab6(32)){c =>[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
