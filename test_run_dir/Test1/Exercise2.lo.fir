@@ -4,7 +4,7 @@ circuit Exercise2 :
     input reset : UInt<1>
     output io_result : UInt<1>
 
-    node _max_T = dshl(asSInt(UInt<2>("h1")), UInt<3>("h4")) @[Exercise2.scala 8:20]
+    node _max_T = dshl(asSInt(UInt<2>("h1")), UInt<4>("ha")) @[Exercise2.scala 8:20]
     node _max_T_1 = sub(_max_T, asSInt(UInt<2>("h1"))) @[Exercise2.scala 8:37]
     node _max_T_2 = tail(_max_T_1, 1) @[Exercise2.scala 8:37]
     node max = asSInt(_max_T_2) @[Exercise2.scala 8:37]

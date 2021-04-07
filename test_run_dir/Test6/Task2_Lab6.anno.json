@@ -4,13 +4,6 @@
     "file":"test_run_dir/Test6/Task2_Lab6.lo.fir"
   },
   {
-    "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~Task2_Lab6|Task2_Lab6>io_out",
-    "sources":[
-      "~Task2_Lab6|Task2_Lab6>io_in"
-    ]
-  },
-  {
     "class":"firrtl.EmitCircuitAnnotation",
     "emitter":"firrtl.LowFirrtlEmitter"
   },

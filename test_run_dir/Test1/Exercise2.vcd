@@ -1,5 +1,5 @@
 $date
-2021-03-24T10:29+0000
+2021-04-07T09:41+0000
 $end
 $version
 0.2
@@ -12,12 +12,12 @@ $scope module Exercise2 $end
  $var wire 4 ! count $end
  $var wire 1 " _T $end
  $var wire 1 # _GEN_2 $end
- $var wire 9 $ _max_T_2 $end
+ $var wire 17 $ _max_T_2 $end
  $var wire 5 % _count_T $end
  $var wire 4 & _count_T_1 $end
- $var wire 9 ' max $end
+ $var wire 17 ' max $end
  $var wire 4 ( _GEN_1 $end
- $var wire 10 ) _max_T_1 $end
+ $var wire 18 ) _max_T_1 $end
  $var wire 1 * clock $end
  $var wire 1 + io_result $end
  $var wire 4 , _GEN_0 $end
@@ -28,16 +28,16 @@ $upscope $end
 $enddefinitions $end
 $dumpvars
 b0000 (
+b00000000000000000 $
 b00000 %
 0.
-b000000000 $
 b0000 !
 0/
 0"
-b000000000 '
 0#
+b00000000000000000 '
+b000000001111111111 )
 0*
-b0000001111 )
 b0000 ,
 0+
 b0000 -
@@ -48,8 +48,8 @@ b0001 -
 b00001 %
 1.
 b0001 &
-b000001111 '
-b000001111 $
+b00000001111111111 '
+b00000001111111111 $
 b0001 (
 b0001 ,
 #1
