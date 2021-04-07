@@ -1,4 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab6/Task3_Lab6.scala:6:7: shift_register is already defined as class shift_register[0m
-[0m[[0m[31merror[0m] [0m[0mclass shift_register(n:Int) extends Bundle {[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab6/Task4_Lab6.scala:10:20: not found: value RegInt[0m
+[0m[[0m[31merror[0m] [0m[0m    val count_up = RegInt(0.U(max.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab6/Task4_Lab6.scala:11:22: not found: value RegInt[0m
+[0m[[0m[31merror[0m] [0m[0m    val count_down = RegInt(max.U(max.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

@@ -1,7 +1,14 @@
 [
   {
     "class":"firrtl.stage.FirrtlFileAnnotation",
-    "file":"test_run_dir/Test6/Task3_Lab6.lo.fir"
+    "file":"test_run_dir/Test6/Task4_Lab6.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Task4_Lab6|Task4_Lab6>io_out",
+    "sources":[
+      "~Task4_Lab6|Task4_Lab6>io_up_down"
+    ]
   },
   {
     "class":"firrtl.EmitCircuitAnnotation",

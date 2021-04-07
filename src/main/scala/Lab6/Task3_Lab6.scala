@@ -4,10 +4,9 @@ import chisel3.util._
 
 
 class shift_register_2(n:Int) extends Bundle {
-    val in = Input (UInt(n.W))
+    val in = Vec(n,Input (UInt(n.W)))
     val load = Input(Bool())
-    val out_Parallel = Output(UInt(n.W))
-    val out_Serial = Output(Bool())    
+    val out= Vec(n,Output(UInt(n.W)))
 }
 
 //val loadReg = RegInit(0.U(4.W))
@@ -23,21 +22,12 @@ class Task3_Lab6(n:Int) extends Module{
     val io = IO (new shift_register_2(n))
     val state = RegInit(0.U(n.W))
     val load = RegInit(0.U(n.W))
-    io.out_Parallel:=0.U
-    io.out_Serial:=0.B
-    when(io.load === 1.B){
-    when(load === 0.U){
-        load:=load+1.U
-        state:=io.in
-    }.otherwise{
-        state:= state >> 1
-        io.out_Serial:=state(0)
+    for (i <- 0 until n){
+        io.out(i):=0.U
     }
-    }.elsewhen(io.load === 0.B){
-        when(load === 0.U){
+    when(io.load === 0.U){
         load:=load+1.U
-        state:=io.in
-    }
-        io.out_Parallel:=state
+        state:=io.in(load)
+        
     }
 }
