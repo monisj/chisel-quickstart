@@ -1,36 +1,44 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 29 products, 29 sources, 6 libraries[0m
-[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/test/scala/Lab2/Task2_test.scala, ${BASE}/src/test/scala/Lab3/Task2_test.scala, ${BASE}/src/test/scala/Test1/Test1_Tests.scala, ${BASE}/src/test/scala/Lab5/Ex_test2.scala, ${BASE}/src/test/scala/Lab6/Ex_test3.scala, ${BASE}/src/test/scala/Lab4/Task2_test.scala, ${BASE}/src/test/scala/Lab3/Ex_test2.scala, ${BASE}/src/test/scala/Lab6/Ex_test2.scala, ${BASE}/src/test/scala/Lab2/Ex_test3.scala, ${BASE}/src/test/scala/Lab2/Ex_test2.scala, ${BASE}/src/test/scala/Lab1/Ex_test2.scala, ${BASE}/src/test/scala/gcd/gcd_tests.scala, ${BASE}/src/test/scala/Lab6/Ex_test1.scala, ${BASE}/src/test/scala/Lab4/Task1_test.scala, ${BASE}/src/test/scala/Lab3/Ex_test1.scala, ${BASE}/src/test/scala/Lab5/Task1_test.scala, ${BASE}/src/test/scala/Lab5/Ex_test1.scala, ${BASE}/src/test/scala/Lab3/Task3_test.scala, ${BASE}/src/test/scala/Lab4/Ex_test1.scala, ${BASE}/src/test/scala/Lab2/Ex_test1.scala, ${BASE}/src/test/scala/Lab1/Task2_tests.scala, ${BASE}/src/test/scala/Lab2/Task1_test.scala, ${BASE}/src/test/scala/Lab3/Task1_test.scala, ${BASE}/src/test/scala/Lab1/Ex_test3.scala, ${BASE}/src/test/scala/Lab5/Ex_test3.scala, ${BASE}/src/test/scala/gcd/GCDSpec.scala, ${BASE}/src/test/scala/Lab5/Task3_test.scala, ${BASE}/src/test/scala/Lab1/Ex_tests.scala, ${BASE}/src/test/scala/Lab5/Task2_test.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/test/scala/Lab6/Ex_test3.scala), unmodified = ...),Set(),Set(),API Changes: Set(NamesChange(Lab6.Exercise3_Lab6,ModifiedNames(changes = UsedName(next,[Default]), UsedName(done,[Default]), UsedName(counter_2,[Default])))))[0m
-[0m[[0m[0mdebug[0m] [0m[0mThe Lab6.Exercise3_Lab6 has the following regular definitions changed:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	UsedName(next,[Default]), UsedName(done,[Default]), UsedName(counter_2,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 30 products, 30 sources, 6 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/test/scala/Lab2/Task2_test.scala, ${BASE}/src/test/scala/Lab3/Task2_test.scala, ${BASE}/src/test/scala/Test1/Test1_Tests.scala, ${BASE}/src/test/scala/Lab5/Ex_test2.scala, ${BASE}/src/test/scala/Lab6/Ex_test3.scala, ${BASE}/src/test/scala/Lab4/Task2_test.scala, ${BASE}/src/test/scala/Lab3/Ex_test2.scala, ${BASE}/src/test/scala/Lab6/Task2_test.scala, ${BASE}/src/test/scala/Lab6/Ex_test2.scala, ${BASE}/src/test/scala/Lab2/Ex_test3.scala, ${BASE}/src/test/scala/Lab2/Ex_test2.scala, ${BASE}/src/test/scala/Lab1/Ex_test2.scala, ${BASE}/src/test/scala/gcd/gcd_tests.scala, ${BASE}/src/test/scala/Lab6/Ex_test1.scala, ${BASE}/src/test/scala/Lab4/Task1_test.scala, ${BASE}/src/test/scala/Lab3/Ex_test1.scala, ${BASE}/src/test/scala/Lab5/Task1_test.scala, ${BASE}/src/test/scala/Lab5/Ex_test1.scala, ${BASE}/src/test/scala/Lab3/Task3_test.scala, ${BASE}/src/test/scala/Lab4/Ex_test1.scala, ${BASE}/src/test/scala/Lab2/Ex_test1.scala, ${BASE}/src/test/scala/Lab1/Task2_tests.scala, ${BASE}/src/test/scala/Lab2/Task1_test.scala, ${BASE}/src/test/scala/Lab3/Task1_test.scala, ${BASE}/src/test/scala/Lab1/Ex_test3.scala, ${BASE}/src/test/scala/Lab5/Ex_test3.scala, ${BASE}/src/test/scala/gcd/GCDSpec.scala, ${BASE}/src/test/scala/Lab5/Task3_test.scala, ${BASE}/src/test/scala/Lab1/Ex_tests.scala, ${BASE}/src/test/scala/Lab5/Task2_test.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/test/scala/Lab6/Task2_test.scala), unmodified = ...),Set(),Set(),API Changes: Set(NamesChange(Lab6.counter_with_xor,ModifiedNames(changes = UsedName(getClass,[Default]), UsedName(equals,[Default]), UsedName(wait,[Default]), UsedName(synchronized,[Default]), UsedName(notifyAll,[Default]), UsedName(<init>$default$1,[Default]), UsedName(clone,[Default]), UsedName(finalize,[Default]), UsedName(eq,[Default]), UsedName(notify,[Default]), UsedName(out,[Default]), UsedName(isInstanceOf,[Default]), UsedName(==,[Default]), UsedName(asInstanceOf,[Default]), UsedName(hashCode,[Default]), UsedName(ne,[Default]), UsedName(##,[Default]), UsedName(counter_with_xor,[Default]), UsedName(toString,[Default]), UsedName(!=,[Default]), UsedName(Lab6;counter_with_xor;init;,[Default]))), NamesChange(Lab6.Task2_Lab6,ModifiedNames(changes = UsedName(max,[Default]), UsedName(Lab6;Task2_Lab6;init;,[Default])))))[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe Lab6.counter_with_xor has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(getClass,[Default]), UsedName(equals,[Default]), UsedName(wait,[Default]), UsedName(synchronized,[Default]), UsedName(notifyAll,[Default]), UsedName(<init>$default$1,[Default]), UsedName(clone,[Default]), UsedName(finalize,[Default]), UsedName(eq,[Default]), UsedName(notify,[Default]), UsedName(out,[Default]), UsedName(isInstanceOf,[Default]), UsedName(==,[Default]), UsedName(asInstanceOf,[Default]), UsedName(hashCode,[Default]), UsedName(ne,[Default]), UsedName(##,[Default]), UsedName(counter_with_xor,[Default]), UsedName(toString,[Default]), UsedName(!=,[Default]), UsedName(Lab6;counter_with_xor;init;,[Default]).[0m
 [0m[[0m[0mdebug[0m] [0m[0mAll member reference dependencies will be considered within this context.[0m
-[0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) Lab6.Exercise3_Lab6: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) Lab6.counter_with_xor: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mNow invalidating by inheritance (internally).[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting direct dependencies of all classes transitively invalidated by inheritance.[0m
-[0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) Lab6.Exercise3_Lab6.[0m
-[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of Lab6.Ex_test3. This dependency is not being considered for invalidation.[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) Lab6.counter_with_xor.[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of Lab6.Task2_test: Set(UsedName(out,[Default]), UsedName(counter_with_xor,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe Lab6.Task2_Lab6 has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(max,[Default]), UsedName(Lab6;Task2_Lab6;init;,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0m[0mdebug[0m] [0m[0mFiles invalidated by inheriting from (external) Lab6.Task2_Lab6: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mNow invalidating by inheritance (internally).[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting direct dependencies of all classes transitively invalidated by inheritance.[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting classes that directly depend on (external) Lab6.Task2_Lab6.[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of Lab6.Task2_test: Set(UsedName(Lab6;Task2_Lab6;init;,[Default]))[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/test/scala/Lab6/Ex_test3.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/test/scala/Lab6/Task2_test.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set(NamesChange(Lab6.Exercise3_Lab6,ModifiedNames(changes = UsedName(next,[Default]), UsedName(done,[Default]), UsedName(counter_2,[Default]))))[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set(NamesChange(Lab6.counter_with_xor,ModifiedNames(changes = UsedName(getClass,[Default]), UsedName(equals,[Default]), UsedName(wait,[Default]), UsedName(synchronized,[Default]), UsedName(notifyAll,[Default]), UsedName(<init>$default$1,[Default]), UsedName(clone,[Default]), UsedName(finalize,[Default]), UsedName(eq,[Default]), UsedName(notify,[Default]), UsedName(out,[Default]), UsedName(isInstanceOf,[Default]), UsedName(==,[Default]), UsedName(asInstanceOf,[Default]), UsedName(hashCode,[Default]), UsedName(ne,[Default]), UsedName(##,[Default]), UsedName(counter_with_xor,[Default]), UsedName(toString,[Default]), UsedName(!=,[Default]), UsedName(Lab6;counter_with_xor;init;,[Default]))), NamesChange(Lab6.Task2_Lab6,ModifiedNames(changes = UsedName(max,[Default]), UsedName(Lab6;Task2_Lab6;init;,[Default]))))[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(Lab6.Ex_test3)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(Lab6.Task2_test)[0m
 [0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(Lab6.Ex_test3)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/test/scala/Lab6/Ex_test3.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Lab6.Ex_test3[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set(Lab6.Task2_test)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(Lab6.Task2_test)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/test/scala/Lab6/Task2_test.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Lab6.Task2_test[0m
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
 [0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/monis/Desktop/chisel-quickstart/target/scala-2.12/test-classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.4.4:compile for Scala 2.12.12[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 11c007cc for Scala compiler version 2.12.12[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 30c62275 for Scala compiler version 2.12.12[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-Xsource:2.11[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-language:reflectiveCalls[0m
@@ -49,5 +57,5 @@
 [0m[[0m[0mdebug[0m] [0m[0mFinal step, transitive dependencies:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 1.525139371 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.728570525 s[0m
 [0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m
