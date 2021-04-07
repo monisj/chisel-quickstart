@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab6/Task2_test.scala:10:29: no arguments allowed for nullary constructor Task2_Lab6: ()Lab6.Task2_Lab6[0m
-[0m[[0m[31merror[0m] [0m[0m        test(new Task2_Lab6(1)){c =>[0m
-[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab6/Task3_test.scala:14:18: value out is not a member of Lab6.shift_register_2[0m
+[0m[[0m[31merror[0m] [0m[0m            c.io.out.expect(0.B)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
