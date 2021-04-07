@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab6/Task4_test.scala:16:5: ')' expected but '}' found.[0m
-[0m[[0m[31merror[0m] [0m[0m    }[0m
-[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab6/Ex_test4.scala:13:18: value load is not a member of chisel3.Bundle{val in: chisel3.util.DecoupledIO[chisel3.UInt]; val out: chisel3.util.DecoupledIO[chisel3.UInt]}[0m
+[0m[[0m[31merror[0m] [0m[0m            c.io.load.poke(0.B)  [0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

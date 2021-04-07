@@ -1,7 +1,16 @@
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab6/Task4_Lab6.scala:10:20: not found: value RegInt[0m
-[0m[[0m[31merror[0m] [0m[0m    val count_up = RegInt(0.U(max.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                   ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab6/Task4_Lab6.scala:11:22: not found: value RegInt[0m
-[0m[[0m[31merror[0m] [0m[0m    val count_down = RegInt(max.U(max.W))[0m
-[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab6/Exercise4_Lab6.scala:13:10: value < is not a member of chisel3.util.DecoupledIO[chisel3.UInt][0m
+[0m[[0m[31merror[0m] [0m[0mio . out < > queue[0m
+[0m[[0m[31merror[0m] [0m[0m         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab6/Exercise4_Lab6.scala:13:12: not found: value >[0m
+[0m[[0m[31merror[0m] [0m[0mio . out < > queue[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab6/Exercise4_Lab6.scala:13:14: postfix operator queue should be enabled[0m
+[0m[[0m[33mwarn[0m] [0m[0mby making the implicit value scala.language.postfixOps visible.[0m
+[0m[[0m[33mwarn[0m] [0m[0mThis can be achieved by adding the import clause 'import scala.language.postfixOps'[0m
+[0m[[0m[33mwarn[0m] [0m[0mor by setting the compiler option -language:postfixOps.[0m
+[0m[[0m[33mwarn[0m] [0m[0mSee the Scaladoc for value scala.language.postfixOps for a discussion[0m
+[0m[[0m[33mwarn[0m] [0m[0mwhy the feature should be explicitly enabled.[0m
+[0m[[0m[33mwarn[0m] [0m[0mio . out < > queue[0m
+[0m[[0m[33mwarn[0m] [0m[0m             ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
 [0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
