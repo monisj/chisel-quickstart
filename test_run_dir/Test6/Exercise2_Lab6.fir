@@ -3,13 +3,13 @@ circuit Exercise2_Lab6 :
   module Exercise2_Lab6 : 
     input clock : Clock
     input reset : UInt<1>
-    output io : {out : UInt<4>}
+    output io : {out : UInt<1>}
     
-    reg counter : UInt<4>, clock with : (reset => (reset, UInt<4>("h00"))) @[Exercise2_Lab6.scala 9:27]
+    reg counter : UInt<1>, clock with : (reset => (reset, UInt<1>("h00"))) @[Exercise2_Lab6.scala 9:27]
     node _count_buffer_T = and(UInt<1>("h01"), UInt<1>("h01")) @[Exercise2_Lab6.scala 11:47]
     node _count_buffer_T_1 = add(counter, UInt<1>("h01")) @[Exercise2_Lab6.scala 11:72]
     node _count_buffer_T_2 = tail(_count_buffer_T_1, 1) @[Exercise2_Lab6.scala 11:72]
-    node _count_buffer_T_3 = eq(counter, UInt<5>("h010")) @[Exercise2_Lab6.scala 11:93]
+    node _count_buffer_T_3 = eq(counter, UInt<2>("h02")) @[Exercise2_Lab6.scala 11:93]
     node _count_buffer_T_4 = add(counter, UInt<1>("h01")) @[Exercise2_Lab6.scala 12:29]
     node _count_buffer_T_5 = tail(_count_buffer_T_4, 1) @[Exercise2_Lab6.scala 12:29]
     node _count_buffer_T_6 = mux(_count_buffer_T_3, UInt<1>("h00"), _count_buffer_T_5) @[Exercise2_Lab6.scala 11:83]
