@@ -4,6 +4,20 @@
     "file":"test_run_dir/Test6/Exercise4_Lab6.lo.fir"
   },
   {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Exercise4_Lab6|Exercise4_Lab6>io_out_valid",
+    "sources":[
+      "~Exercise4_Lab6|Exercise4_Lab6>io_in_ready"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Exercise4_Lab6|Exercise4_Lab6>io_out_bits",
+    "sources":[
+      "~Exercise4_Lab6|Exercise4_Lab6>io_in_ready"
+    ]
+  },
+  {
     "class":"firrtl.transforms.DedupedResult",
     "original":"~Exercise4_Lab6|Queue",
     "duplicate":"~Exercise4_Lab6|Exercise4_Lab6/queue:Queue",

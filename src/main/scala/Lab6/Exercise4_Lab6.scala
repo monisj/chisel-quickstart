@@ -8,8 +8,17 @@ class Exercise4_Lab6 extends Module {
     val out = Decoupled ( UInt (8. W ) )
     })
 
+    io.out.bits:=0.U
+    io.out.valid:=true.B
+    //io.out.ready:=true.B
     val queue = Queue ( io . in , 5)
-    val queue_1 =Queue (queue,5)  // 5 - element queue
+    val queue_1 =Queue (queue,5) 
 
-io.out <> queue_1
+
+    queue.nodeq()
+    queue_1.nodeq()
+
+     when (queue.valid && queue_1.valid && io.in.ready) {
+        io.out.enq(queue_1.deq())
+}
 }

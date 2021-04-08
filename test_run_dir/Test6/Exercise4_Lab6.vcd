@@ -1,5 +1,5 @@
 $date
-2021-04-07T17:25+0000
+2021-04-08T06:56+0000
 $end
 $version
 0.2
@@ -9,65 +9,66 @@ $comment
 $end
 $timescale 1ns  $end
 $scope module Exercise4_Lab6 $end
- $var wire 1 * io_in_ready $end
- $var wire 1 0 io_out_ready $end
- $var wire 8 P io_out_bits $end
- $var wire 1 W queue $end
- $var wire 1 Z clock $end
- $var wire 1 ] io_in_valid $end
- $var wire 1 c io_out_valid $end
- $var wire 1 d queue_1 $end
- $var wire 8 t io_in_bits $end
- $var wire 1 u reset $end
+ $var wire 1 ( _T $end
+ $var wire 1 + io_in_ready $end
+ $var wire 1 1 io_out_ready $end
+ $var wire 8 Q io_out_bits $end
+ $var wire 1 X queue $end
+ $var wire 1 [ clock $end
+ $var wire 1 ^ io_in_valid $end
+ $var wire 1 d io_out_valid $end
+ $var wire 1 e queue_1 $end
+ $var wire 8 u io_in_bits $end
+ $var wire 1 v reset $end
   $scope module queue_1 $end
    $var wire 3 " _value_T_3 $end
    $var wire 3 # _GEN_7 $end
-   $var wire 1 - ptr_match $end
-   $var wire 1 3 io_enq_ready $end
-   $var wire 1 6 do_deq $end
-   $var wire 3 ; _GEN_6 $end
-   $var wire 1 < io_deq_valid $end
-   $var wire 4 = _value_T_2 $end
-   $var wire 3 > _GEN_0 $end
-   $var wire 1 A _GEN_9 $end
-   $var wire 1 C empty $end
-   $var wire 4 F _value_T $end
-   $var wire 3 H value_1 $end
-   $var wire 1 L _empty_T $end
-   $var wire 8 N ram $end
-   $var wire 1 O clock $end
-   $var wire 1 R maybe_full $end
-   $var wire 3 V _value_T_1 $end
-   $var wire 1 X do_enq $end
-   $var wire 3 \ value $end
-   $var wire 3 b _GEN_8 $end
-   $var wire 8 e io_deq_bits $end
-   $var wire 1 f io_deq_ready $end
-   $var wire 1 g _T $end
-   $var wire 1 l full $end
-   $var wire 1 r io_enq_valid $end
-   $var wire 8 v io_enq_bits $end
-   $var wire 1 w wrap $end
-   $var wire 1 } wrap_1 $end
-   $var wire 1 "# reset $end
+   $var wire 1 . ptr_match $end
+   $var wire 1 4 io_enq_ready $end
+   $var wire 1 7 do_deq $end
+   $var wire 3 < _GEN_6 $end
+   $var wire 1 = io_deq_valid $end
+   $var wire 4 > _value_T_2 $end
+   $var wire 3 ? _GEN_0 $end
+   $var wire 1 B _GEN_9 $end
+   $var wire 1 D empty $end
+   $var wire 4 G _value_T $end
+   $var wire 3 I value_1 $end
+   $var wire 1 M _empty_T $end
+   $var wire 8 O ram $end
+   $var wire 1 P clock $end
+   $var wire 1 S maybe_full $end
+   $var wire 3 W _value_T_1 $end
+   $var wire 1 Y do_enq $end
+   $var wire 3 ] value $end
+   $var wire 3 c _GEN_8 $end
+   $var wire 8 f io_deq_bits $end
+   $var wire 1 g io_deq_ready $end
+   $var wire 1 h _T $end
+   $var wire 1 m full $end
+   $var wire 1 s io_enq_valid $end
+   $var wire 8 w io_enq_bits $end
+   $var wire 1 x wrap $end
+   $var wire 1 ~ wrap_1 $end
+   $var wire 1 "$ reset $end
     $scope module ram $end
-     $var wire 8 o MPORT $end
+     $var wire 8 p MPORT $end
       $scope module MPORT $end
-       $var wire 3 1 pipeline_addr_0 $end
-       $var wire 3 5 addr $end
-       $var wire 1 E en $end
-       $var wire 8 M data $end
-       $var wire 8 ^ pipeline_data_0 $end
-       $var wire 1 ` pipeline_valid_0 $end
-       $var wire 1 i clk $end
-       $var wire 1 y valid $end
-       $var wire 1 | mask $end
+       $var wire 3 2 pipeline_addr_0 $end
+       $var wire 3 6 addr $end
+       $var wire 1 F en $end
+       $var wire 8 N data $end
+       $var wire 8 _ pipeline_data_0 $end
+       $var wire 1 a pipeline_valid_0 $end
+       $var wire 1 j clk $end
+       $var wire 1 z valid $end
+       $var wire 1 } mask $end
       $upscope $end
       $scope module io_deq_bits_MPORT $end
-       $var wire 1 : clk $end
-       $var wire 8 @ data $end
-       $var wire 1 a en $end
-       $var wire 3 ~ addr $end
+       $var wire 1 ; clk $end
+       $var wire 8 A data $end
+       $var wire 1 b en $end
+       $var wire 3 "! addr $end
       $upscope $end
     $upscope $end
   $upscope $end
@@ -75,463 +76,550 @@ $scope module Exercise4_Lab6 $end
    $var wire 1 ! wrap $end
    $var wire 4 $ _value_T_2 $end
    $var wire 1 % ptr_match $end
-   $var wire 8 ( io_enq_bits $end
-   $var wire 1 ) full $end
-   $var wire 1 , do_deq $end
-   $var wire 3 / value $end
-   $var wire 1 2 clock $end
-   $var wire 1 7 _GEN_9 $end
-   $var wire 1 8 io_enq_valid $end
-   $var wire 3 9 _GEN_0 $end
-   $var wire 1 ? maybe_full $end
-   $var wire 1 B io_deq_ready $end
-   $var wire 3 D _GEN_6 $end
-   $var wire 4 J _value_T $end
-   $var wire 3 K _value_T_1 $end
-   $var wire 1 Q reset $end
-   $var wire 1 S _empty_T $end
-   $var wire 1 U do_enq $end
-   $var wire 3 Y _GEN_8 $end
-   $var wire 8 [ ram $end
-   $var wire 1 h io_enq_ready $end
-   $var wire 1 m empty $end
-   $var wire 1 n io_deq_valid $end
-   $var wire 3 q _value_T_3 $end
-   $var wire 1 s _T $end
-   $var wire 1 x wrap_1 $end
-   $var wire 8 z io_deq_bits $end
-   $var wire 3 { value_1 $end
-   $var wire 3 "" _GEN_7 $end
+   $var wire 8 ) io_enq_bits $end
+   $var wire 1 * full $end
+   $var wire 1 - do_deq $end
+   $var wire 3 0 value $end
+   $var wire 1 3 clock $end
+   $var wire 1 8 _GEN_9 $end
+   $var wire 1 9 io_enq_valid $end
+   $var wire 3 : _GEN_0 $end
+   $var wire 1 @ maybe_full $end
+   $var wire 1 C io_deq_ready $end
+   $var wire 3 E _GEN_6 $end
+   $var wire 4 K _value_T $end
+   $var wire 3 L _value_T_1 $end
+   $var wire 1 R reset $end
+   $var wire 1 T _empty_T $end
+   $var wire 1 V do_enq $end
+   $var wire 3 Z _GEN_8 $end
+   $var wire 8 \ ram $end
+   $var wire 1 i io_enq_ready $end
+   $var wire 1 n empty $end
+   $var wire 1 o io_deq_valid $end
+   $var wire 3 r _value_T_3 $end
+   $var wire 1 t _T $end
+   $var wire 1 y wrap_1 $end
+   $var wire 8 { io_deq_bits $end
+   $var wire 3 | value_1 $end
+   $var wire 3 "# _GEN_7 $end
     $scope module ram $end
-     $var wire 8 "! MPORT $end
+     $var wire 8 "" MPORT $end
       $scope module MPORT $end
        $var wire 3 & pipeline_addr_0 $end
        $var wire 1 ' clk $end
-       $var wire 1 . mask $end
-       $var wire 3 G addr $end
-       $var wire 8 T pipeline_data_0 $end
-       $var wire 8 _ data $end
-       $var wire 1 j en $end
-       $var wire 1 k pipeline_valid_0 $end
-       $var wire 1 p valid $end
+       $var wire 1 / mask $end
+       $var wire 3 H addr $end
+       $var wire 8 U pipeline_data_0 $end
+       $var wire 8 ` data $end
+       $var wire 1 k en $end
+       $var wire 1 l pipeline_valid_0 $end
+       $var wire 1 q valid $end
       $upscope $end
       $scope module io_deq_bits_MPORT $end
-       $var wire 3 + addr $end
-       $var wire 1 4 clk $end
-       $var wire 8 I data $end
-       $var wire 1 "$ en $end
+       $var wire 3 , addr $end
+       $var wire 1 5 clk $end
+       $var wire 8 J data $end
+       $var wire 1 "% en $end
       $upscope $end
     $upscope $end
   $upscope $end
 $upscope $end
 $enddefinitions $end
 $dumpvars
+b000 "#
 0X
 0C
-b00000000 M
-b000 G
-0Z
-b000 {
+0;
+b000 2
+0o
+b0000 >
 0R
+0=
+b000 I
+b00000000 \
+b000 ,
+0q
 0i
+0T
+b00000000 {
 07
-b00000000 ^
-b00000000 I
+b00000000 A
 b000 &
 0k
-1a
+b000 "!
+0V
+1/
+b00000000 u
+b00000000 `
+b000 Z
+b000 E
+09
 0m
-b000 q
-b000 \
-b00000000 o
+0e
+0P
+b00000000 w
 03
-b00000000 (
+b000 ?
 b000 "
 0g
-b000 V
-1|
+b0000 K
+05
 0-
-b00000000 T
-b000 9
-0L
-0"#
-b000 ;
+0~
+b00000000 ""
+0a
+0D
 b00000000 N
 0x
-0c
-0)
-b00000000 P
-b000 5
-0r
-0]
-b000 ~
-1"$
-b000 /
-0W
+b0000 G
+0[
+0F
+01
+0z
+0@
+0+
+b000 L
+b00000000 J
+0t
 0B
+b000 c
 0%
-b000 1
+0v
 0n
-b0000 =
-0<
-0'
+0Y
+b000 ]
 b000 H
-b000 +
-0p
+0'
+b000 |
 0S
-b00000000 z
-b00000000 e
-06
 0!
+1}
 0j
-0U
 b0000 $
-1.
-b00000000 t
-b00000000 _
-b000 Y
-b000 D
+0M
 08
+b00000000 _
+1b
 0l
-b000 ""
 0d
-0O
-b00000000 v
-0:
-02
-b000 >
-0f
-0Q
-b0000 J
+b000 r
 04
-b00000000 [
-0}
+b00000000 p
+b00000000 )
 0h
-b00000000 "!
 b000 #
-0`
-b00000000 @
-0w
-b0000 F
-0E
-00
+b000 W
+0.
+b00000000 U
+b000 :
+0"$
+b000 <
+0(
+b00000000 O
 0y
-0?
+b00000000 f
+b00000000 Q
+b000 6
 0*
-b000 K
 0s
-0A
-b000 b
-0,
-0u
+0^
+1"%
+b000 0
 $end
 #0
-13
-1B
-1u
-1-
-1Q
 1%
-1C
-b0001 J
-1h
-1S
-b001 K
-b0001 =
-1L
-b001 >
-b001 q
-b001 "
-b0001 F
-b001 #
-b001 V
-b001 ""
-1*
-b001 9
-b0001 $
-1"#
-1m
-#1
 14
-12
-1'
-1Z
+1"$
+1v
+1.
+1R
+1D
+b0001 K
 1i
-1O
-1:
+b001 L
+b0001 >
+1M
+1T
+b001 ?
+b001 r
+b001 "
+1d
+b001 #
+b0001 G
+b0001 $
+b001 W
+b001 "#
+1+
+b001 :
+1n
+#1
+13
+15
+1'
+1[
+1j
+1P
+1;
 #6
-0u
-0Q
-04
-b001 D
+03
+b00000010 u
+b00000010 `
+0"$
+0v
+0R
+05
 0'
-0Z
-0i
-1p
+b001 E
+0[
+0j
+1q
+b00000010 )
+18
+1k
+1V
+19
+1^
+0P
+0;
+1t
+#11
+13
+b001 <
+b00000010 J
+15
+1h
+b0010 K
+b010 L
+1j
+b001 0
+b00000010 N
+1F
+1z
+b001 H
+b00000010 {
+1B
+0%
+1Y
+b00000010 w
+1o
+1'
+b010 E
+1[
+0T
+b00000010 U
+1@
+1s
+1l
+b010 :
+1P
+1;
+0n
+#16
+03
+05
+0'
+0[
+0j
+0P
+0;
+#21
+13
+b00000010 f
+b00000010 Q
+b010 <
+1g
+15
+0h
+1S
+b0011 K
+b001 6
+1a
+b011 L
 17
 1j
-b00000001 (
-1U
-1s
-18
-02
-1]
-0"#
-0O
-0:
-b00000001 t
-b00000001 _
-#11
-14
-1g
-b0010 J
-0S
-b010 K
-1i
-b001 /
-b00000001 M
-1y
-b001 G
-12
-b00000001 z
-b00000001 I
-1A
-1,
-0%
-1X
-b00000001 v
-b001 Y
-b010 D
-1'
-1Z
-1E
-b00000001 T
-1?
-1r
-0s
-1k
-b010 9
-1O
-1:
-0m
-b001 ;
-1n
-#16
-04
-02
-0'
-0Z
-0i
-0O
-0:
-#21
-1<
-14
-1R
-b0011 J
-b001 5
-b011 K
-1i
-0L
-b010 /
-1c
-b0010 F
-b010 G
-12
-b00000001 e
-b010 ""
-b001 {
-b001 +
-b00000001 ^
-0-
-1`
-0C
+0M
+b010 0
+b001 c
+b0010 G
+b001 ]
+b010 H
+b00000010 A
+b00000010 _
+0.
 b001 &
-b010 Y
-b011 D
+0D
 1'
-1Z
-b010 >
-b010 q
-b001 \
-b00000001 @
-b010 V
-b011 9
-b0010 $
-1O
-1:
-b00000001 P
-b010 ;
+b011 E
+1=
+1(
+1[
+b010 ?
+b010 W
+b011 :
+1P
+1;
 #26
-04
-02
-0'
-0Z
-0i
-0O
-0:
-#31
-14
-b0100 J
-b010 5
-b100 D
-b011 Y
-b010 &
-b100 K
-1Z
-1i
-1'
-b011 /
-b011 >
-b011 q
-b010 \
-b0011 F
-b001 1
-b011 G
-b011 V
-12
-b011 ""
-b100 9
-b0011 $
-b010 {
-1O
-1:
-b010 +
-b011 ;
-#36
-04
-02
-0'
-0Z
-0i
-0O
-0:
-#41
-14
-b0101 J
-b011 5
-b101 K
-1i
-b100 /
-b0100 F
-b010 1
-b100 G
-12
-b100 ""
-b011 {
-b011 +
-b011 &
-b100 Y
-b000 D
-1'
-1Z
-b100 >
-b100 q
-b011 \
-1!
-b100 V
-b000 9
-b0100 $
-1O
-1:
-b100 ;
-#46
-04
-02
-0'
-0Z
-0i
-0O
-0:
-#51
-14
-b0001 J
-b100 5
-b001 K
-1i
-b000 /
-b0101 F
-b011 1
-b000 G
-12
-b000 ""
-b100 {
-b100 +
-b100 &
-b000 Y
-b001 D
-1w
-1'
-1Z
-1x
-b000 >
-b101 q
-b100 \
-0!
-b101 V
-b001 9
-b0101 $
-1O
-1:
-b000 ;
-#56
-04
-b000 D
-0'
-0Z
-0i
-b00000000 (
-07
-0j
-0p
-0U
-1s
-08
-02
-0]
-0O
-0:
-b00000000 t
-b00000000 _
-#61
 03
-14
-0g
-b000 5
-1S
-1i
-b0001 F
-b100 1
-0y
-12
-b001 ""
-b000 {
-b000 +
-0,
-0B
-1-
-1%
-0X
-b000 &
-0w
+05
+0'
+0[
+0j
+0P
+0;
+#31
+13
+b011 <
+b010 &
+15
+b0100 K
+b010 6
+b100 E
 1'
-1Z
-0E
-0x
-b001 >
-b001 q
-b000 \
-b00000000 T
-0?
-0r
-0s
+b100 L
+1[
+1j
+b0010 >
+b011 0
+b011 ?
+b010 c
+b010 "
+b001 "!
+b010 #
+b0011 G
+b001 2
+b010 ]
+b011 H
+b011 W
+b100 :
+b001 I
+1P
+1;
+#36
+03
+05
+0'
+0[
+0j
+0P
+0;
+#41
+13
+b100 <
+15
+b0101 K
+b011 6
+b101 L
+1j
+b100 0
+b011 c
+b010 "!
+b0100 G
+b010 2
+b011 ]
+b100 H
+b010 I
+b011 &
+1'
+b000 E
+1[
+b0011 >
+1!
+b100 ?
+b011 "
+b011 #
+b100 W
+b000 :
+1P
+1;
+#46
+03
+05
+0'
+0[
+0j
+0P
+0;
+#51
+13
+b00000000 Q
+b000 <
+0g
+15
+1h
+b0001 K
+b100 6
+0i
+b001 L
+07
+1j
+b000 0
+b011 "!
+b0101 G
+b011 2
+1*
+b100 ]
+b000 H
+0+
+b011 I
+0t
+1%
+b100 &
+1'
+1x
+1[
+b0100 >
+0q
+0!
+b000 ?
+b100 "
+b100 #
+0V
 0k
-b001 V
-1l
-b0001 $
-1O
-1:
-1m
-0n
+b101 W
+b001 :
+1P
+1;
+#56
+03
+05
+0'
+0[
+0j
+0P
+0;
+#61
+13
+b001 <
+b000 &
+15
+1'
+b000 6
+0x
+1[
+1j
+b001 ?
+b0001 G
+b100 2
+b000 ]
+0l
+b001 W
+1P
+1;
 #66
-0Z
+03
+05
+0'
+0[
+0j
+0P
+0;
+#71
+13
+b010 <
+15
+1'
+b001 6
+1[
+1j
+b010 ?
+b0010 G
+b000 2
+b001 ]
+b010 W
+1P
+1;
+#76
+03
+05
+0'
+0[
+0j
+0P
+0;
+#81
+13
+b011 <
+15
+1'
+b010 6
+1[
+1j
+b011 ?
+b0011 G
+b001 2
+b010 ]
+b011 W
+1P
+1;
+#86
+03
+05
+0'
+0[
+0j
+0P
+0;
+#91
+13
+04
+1.
+0Y
+0h
+15
+1'
+b011 6
+1[
+1j
+b100 ?
+0F
+b0100 G
+b010 2
+0z
+b011 ]
+b100 W
+1m
+1P
+1;
+#96
+03
+05
+0'
+0[
+0j
+0P
+0;
+#101
+13
+15
+b011 2
+1'
+0a
+1[
+1j
+1P
+1;
+#106
+03
+b00000000 u
+b00000000 `
+05
+09
+0'
+0^
+0[
+0j
+0P
+0;
+b00000000 )
+#111
+13
+b00000000 U
+15
+1'
+1[
+1j
+1P
+1;
+#116
+0[

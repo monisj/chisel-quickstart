@@ -123,6 +123,8 @@ circuit Exercise4_Lab6 :
     input reset : UInt<1>
     output io : {flip in : {flip ready : UInt<1>, valid : UInt<1>, bits : UInt<8>}, out : {flip ready : UInt<1>, valid : UInt<1>, bits : UInt<8>}}
     
+    io.out.bits <= UInt<1>("h00") @[Exercise4_Lab6.scala 11:16]
+    io.out.valid <= UInt<1>("h01") @[Exercise4_Lab6.scala 12:17]
     inst queue of Queue @[Decoupled.scala 296:21]
     queue.clock <= clock
     queue.reset <= reset
@@ -135,7 +137,13 @@ circuit Exercise4_Lab6 :
     queue_1.io.enq.valid <= queue.io.deq.valid @[Decoupled.scala 297:22]
     queue_1.io.enq.bits <= queue.io.deq.bits @[Decoupled.scala 298:21]
     queue.io.deq.ready <= queue_1.io.enq.ready @[Decoupled.scala 299:17]
-    io.out.bits <= queue_1.io.deq.bits @[Exercise4_Lab6.scala 14:8]
-    io.out.valid <= queue_1.io.deq.valid @[Exercise4_Lab6.scala 14:8]
-    queue_1.io.deq.ready <= io.out.ready @[Exercise4_Lab6.scala 14:8]
+    queue.io.deq.ready <= UInt<1>("h00") @[Decoupled.scala 72:20]
+    queue_1.io.deq.ready <= UInt<1>("h00") @[Decoupled.scala 72:20]
+    node _T = and(queue.io.deq.valid, queue_1.io.deq.valid) @[Exercise4_Lab6.scala 21:24]
+    node _T_1 = and(_T, io.in.ready) @[Exercise4_Lab6.scala 21:41]
+    when _T_1 : @[Exercise4_Lab6.scala 21:57]
+      queue_1.io.deq.ready <= UInt<1>("h01") @[Decoupled.scala 65:20]
+      io.out.valid <= UInt<1>("h01") @[Decoupled.scala 47:20]
+      io.out.bits <= queue_1.io.deq.bits @[Decoupled.scala 48:19]
+      skip @[Exercise4_Lab6.scala 21:57]
     
