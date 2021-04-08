@@ -7,14 +7,14 @@
     "class":"firrtl.transforms.CombinationalPath",
     "sink":"~Exercise4_Lab6|Exercise4_Lab6>io_out_valid",
     "sources":[
-      "~Exercise4_Lab6|Exercise4_Lab6>io_in_ready"
+      "~Exercise4_Lab6|Exercise4_Lab6>io_out_ready"
     ]
   },
   {
     "class":"firrtl.transforms.CombinationalPath",
     "sink":"~Exercise4_Lab6|Exercise4_Lab6>io_out_bits",
     "sources":[
-      "~Exercise4_Lab6|Exercise4_Lab6>io_in_ready"
+      "~Exercise4_Lab6|Exercise4_Lab6>io_out_ready"
     ]
   },
   {

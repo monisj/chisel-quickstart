@@ -87,11 +87,10 @@ circuit Exercise4_Lab6 :
 
     inst queue of Queue @[Decoupled.scala 296:21]
     inst queue_1 of Queue @[Decoupled.scala 296:21]
-    node _T = and(queue.io_deq_valid, queue_1.io_deq_valid) @[Exercise4_Lab6.scala 21:24]
-    node _T_1 = and(_T, io_in_ready) @[Exercise4_Lab6.scala 21:41]
-    node _GEN_0 = mux(_T_1, UInt<1>("h1"), UInt<1>("h0")) @[Exercise4_Lab6.scala 21:57 Decoupled.scala 65:20 Decoupled.scala 72:20]
-    node _GEN_1 = mux(_T_1, UInt<1>("h1"), UInt<1>("h1")) @[Exercise4_Lab6.scala 21:57 Decoupled.scala 47:20 Exercise4_Lab6.scala 12:17]
-    node _GEN_2 = mux(_T_1, queue_1.io_deq_bits, UInt<1>("h0")) @[Exercise4_Lab6.scala 21:57 Decoupled.scala 48:19 Exercise4_Lab6.scala 11:16]
+    node _T = and(queue_1.io_deq_valid, io_out_ready) @[Exercise4_Lab6.scala 28:26]
+    node _GEN_0 = mux(_T, UInt<1>("h1"), UInt<1>("h0")) @[Exercise4_Lab6.scala 28:43 Decoupled.scala 65:20 Decoupled.scala 72:20]
+    node _GEN_1 = mux(_T, UInt<1>("h1"), UInt<1>("h1")) @[Exercise4_Lab6.scala 28:43 Decoupled.scala 47:20 Exercise4_Lab6.scala 12:17]
+    node _GEN_2 = mux(_T, queue_1.io_deq_bits, UInt<1>("h0")) @[Exercise4_Lab6.scala 28:43 Decoupled.scala 48:19 Exercise4_Lab6.scala 11:16]
     io_in_ready <= queue.io_enq_ready @[Decoupled.scala 299:17]
     io_out_valid <= _GEN_1
     io_out_bits <= _GEN_2

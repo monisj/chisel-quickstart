@@ -25,7 +25,7 @@ class Exercise4_Lab6 extends Module {
     queue.nodeq()
     queue_1.nodeq()
 
-     when (queue_1.valid && io.in.ready) {
+     when (queue_1.valid && io.out.ready) {
         io.out.enq(queue_1.deq())
 }
 }
