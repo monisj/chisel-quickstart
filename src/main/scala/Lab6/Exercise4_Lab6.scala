@@ -14,11 +14,18 @@ class Exercise4_Lab6 extends Module {
     val queue = Queue ( io . in , 5)
     val queue_1 =Queue (queue,5) 
 
+//def enq(dat: T): T = {
+  //    target.valid := true.B  Explination
+    //  target.bits := dat
+      //dat
+    //}
+
+
 
     queue.nodeq()
     queue_1.nodeq()
 
-     when (queue.valid && queue_1.valid && io.in.ready) {
+     when (queue_1.valid && io.in.ready) {
         io.out.enq(queue_1.deq())
 }
 }
