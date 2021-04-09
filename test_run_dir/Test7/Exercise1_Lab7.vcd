@@ -1,5 +1,5 @@
 $date
-2021-04-08T11:50+0000
+2021-04-09T14:26+0000
 $end
 $version
 0.2
@@ -9,208 +9,1072 @@ $comment
 $end
 $timescale 1ns  $end
 $scope module Exercise1_Lab7 $end
- $var wire 1 ! io_in_0_ready $end
- $var wire 1 & io_out_ready $end
- $var wire 1 ' io_in_1_valid $end
- $var wire 1 - io_in_2_ready $end
- $var wire 3 / io_out_bits $end
- $var wire 1 2 io_in_0_valid $end
- $var wire 1 3 clock $end
- $var wire 3 4 io_in_1_bits $end
- $var wire 3 5 io_in_0_bits $end
- $var wire 1 6 io_in_1_ready $end
- $var wire 1 7 io_out_valid $end
- $var wire 1 : arb_priority $end
- $var wire 3 ; io_in_2_bits $end
- $var wire 1 = reset $end
- $var wire 1 @ io_in_2_valid $end
+ $var wire 1 ! queue2 $end
+ $var wire 1 $ io_in_0_ready $end
+ $var wire 1 8 io_out_ready $end
+ $var wire 1 > io_in_1_valid $end
+ $var wire 1 D queue1 $end
+ $var wire 1 j io_in_2_ready $end
+ $var wire 3 m io_out_bits $end
+ $var wire 1 x io_in_0_valid $end
+ $var wire 1 | clock $end
+ $var wire 3 "& io_in_1_bits $end
+ $var wire 3 "( io_in_0_bits $end
+ $var wire 1 ", queue3 $end
+ $var wire 1 "- io_in_1_ready $end
+ $var wire 1 ". io_out_valid $end
+ $var wire 1 "= arb_priority $end
+ $var wire 3 "M io_in_2_bits $end
+ $var wire 1 "T reset $end
+ $var wire 1 "c io_in_2_valid $end
+  $scope module queue3 $end
+   $var wire 2 & value $end
+   $var wire 2 ) value_1 $end
+   $var wire 1 @ _T $end
+   $var wire 1 B io_enq_ready $end
+   $var wire 2 H _GEN_7 $end
+   $var wire 2 J _value_T_3 $end
+   $var wire 1 O io_deq_valid $end
+   $var wire 1 R ptr_match $end
+   $var wire 1 X full $end
+   $var wire 1 Z reset $end
+   $var wire 3 [ ram $end
+   $var wire 1 \ wrap_1 $end
+   $var wire 3 i _value_T_2 $end
+   $var wire 1 n wrap $end
+   $var wire 1 s _GEN_9 $end
+   $var wire 1 } do_deq $end
+   $var wire 2 "% _GEN_6 $end
+   $var wire 1 "1 maybe_full $end
+   $var wire 1 "3 io_enq_valid $end
+   $var wire 2 "6 _GEN_0 $end
+   $var wire 1 "7 empty $end
+   $var wire 1 "C io_deq_ready $end
+   $var wire 1 "G do_enq $end
+   $var wire 2 "H _value_T_1 $end
+   $var wire 1 "Q clock $end
+   $var wire 2 "S _GEN_8 $end
+   $var wire 1 "V _empty_T $end
+   $var wire 3 "X io_enq_bits $end
+   $var wire 3 "[ io_deq_bits $end
+   $var wire 3 "a _value_T $end
+    $scope module ram $end
+     $var wire 3 % MPORT $end
+      $scope module MPORT $end
+       $var wire 2 # addr $end
+       $var wire 1 . pipeline_valid_0 $end
+       $var wire 1 5 clk $end
+       $var wire 3 U data $end
+       $var wire 1 a en $end
+       $var wire 2 t pipeline_addr_0 $end
+       $var wire 3 "; pipeline_data_0 $end
+       $var wire 1 "A mask $end
+       $var wire 1 "I valid $end
+      $upscope $end
+      $scope module io_deq_bits_MPORT $end
+       $var wire 2 ` addr $end
+       $var wire 1 b clk $end
+       $var wire 3 "5 data $end
+       $var wire 1 "K en $end
+      $upscope $end
+    $upscope $end
+  $upscope $end
+  $scope module queue1 $end
+   $var wire 2 ( _GEN_6 $end
+   $var wire 1 + wrap $end
+   $var wire 2 0 _GEN_0 $end
+   $var wire 1 3 _GEN_9 $end
+   $var wire 3 ; _value_T $end
+   $var wire 1 < io_deq_ready $end
+   $var wire 1 A _T $end
+   $var wire 3 E io_deq_bits $end
+   $var wire 3 F io_enq_bits $end
+   $var wire 1 G empty $end
+   $var wire 1 I io_enq_valid $end
+   $var wire 1 Q _empty_T $end
+   $var wire 3 W _value_T_2 $end
+   $var wire 1 c do_enq $end
+   $var wire 2 k _GEN_8 $end
+   $var wire 1 z maybe_full $end
+   $var wire 1 "! io_enq_ready $end
+   $var wire 2 "" value $end
+   $var wire 1 "$ clock $end
+   $var wire 1 "* io_deq_valid $end
+   $var wire 2 "2 value_1 $end
+   $var wire 2 "4 _value_T_1 $end
+   $var wire 1 "E wrap_1 $end
+   $var wire 2 "L _GEN_7 $end
+   $var wire 1 "N ptr_match $end
+   $var wire 1 "^ reset $end
+   $var wire 1 "d full $end
+   $var wire 2 "g _value_T_3 $end
+   $var wire 1 "h do_deq $end
+   $var wire 3 "i ram $end
+    $scope module ram $end
+     $var wire 3 ": MPORT $end
+      $scope module MPORT $end
+       $var wire 3 " pipeline_data_0 $end
+       $var wire 1 e mask $end
+       $var wire 1 l pipeline_valid_0 $end
+       $var wire 2 "' addr $end
+       $var wire 2 "? pipeline_addr_0 $end
+       $var wire 1 "@ en $end
+       $var wire 1 "F clk $end
+       $var wire 1 "W valid $end
+       $var wire 3 "_ data $end
+      $upscope $end
+      $scope module io_deq_bits_MPORT $end
+       $var wire 3 / data $end
+       $var wire 1 S en $end
+       $var wire 1 "/ clk $end
+       $var wire 2 "> addr $end
+      $upscope $end
+    $upscope $end
+  $upscope $end
   $scope module arb_priority $end
-   $var wire 1 " io_in_2_valid $end
-   $var wire 1 # io_in_0_ready $end
-   $var wire 3 $ io_in_2_bits $end
-   $var wire 1 % grant_2 $end
-   $var wire 1 ( _io_out_valid_T $end
-   $var wire 3 ) io_out_bits $end
-   $var wire 1 * io_out_ready $end
-   $var wire 1 + io_in_1_valid $end
-   $var wire 1 , _grant_T $end
-   $var wire 1 . grant_1 $end
-   $var wire 1 0 io_in_2_ready $end
-   $var wire 3 1 _GEN_1 $end
-   $var wire 3 8 io_in_0_bits $end
-   $var wire 1 9 io_in_0_valid $end
-   $var wire 1 < io_out_valid $end
-   $var wire 1 > io_in_1_ready $end
-   $var wire 3 ? io_in_1_bits $end
+   $var wire 1 ' io_in_2_valid $end
+   $var wire 1 , io_in_0_ready $end
+   $var wire 3 1 io_in_2_bits $end
+   $var wire 1 6 grant_2 $end
+   $var wire 1 V _io_out_valid_T $end
+   $var wire 3 Y io_out_bits $end
+   $var wire 1 _ io_out_ready $end
+   $var wire 1 d io_in_1_valid $end
+   $var wire 1 h _grant_T $end
+   $var wire 1 o grant_1 $end
+   $var wire 1 v io_in_2_ready $end
+   $var wire 3 w _GEN_1 $end
+   $var wire 3 "0 io_in_0_bits $end
+   $var wire 1 "9 io_in_0_valid $end
+   $var wire 1 "O io_out_valid $end
+   $var wire 3 "Z io_in_1_bits $end
+   $var wire 1 "\ io_in_1_ready $end
+  $upscope $end
+  $scope module queue2 $end
+   $var wire 1 - empty $end
+   $var wire 1 4 io_enq_valid $end
+   $var wire 1 7 _empty_T $end
+   $var wire 3 9 _value_T $end
+   $var wire 1 : full $end
+   $var wire 3 = io_enq_bits $end
+   $var wire 1 ? maybe_full $end
+   $var wire 1 C do_enq $end
+   $var wire 2 K _value_T_1 $end
+   $var wire 3 L ram $end
+   $var wire 1 M clock $end
+   $var wire 2 N _GEN_8 $end
+   $var wire 1 P wrap $end
+   $var wire 1 ] io_enq_ready $end
+   $var wire 2 f value_1 $end
+   $var wire 2 g value $end
+   $var wire 2 p _GEN_7 $end
+   $var wire 1 q io_deq_valid $end
+   $var wire 2 y _value_T_3 $end
+   $var wire 1 ~ wrap_1 $end
+   $var wire 1 "8 _T $end
+   $var wire 1 "< reset $end
+   $var wire 1 "D do_deq $end
+   $var wire 2 "J _GEN_6 $end
+   $var wire 2 "P _GEN_0 $end
+   $var wire 3 "U _value_T_2 $end
+   $var wire 1 "] _GEN_9 $end
+   $var wire 1 "` ptr_match $end
+   $var wire 3 "b io_deq_bits $end
+   $var wire 1 "e io_deq_ready $end
+    $scope module ram $end
+     $var wire 3 "R MPORT $end
+      $scope module MPORT $end
+       $var wire 1 * mask $end
+       $var wire 2 T addr $end
+       $var wire 1 r clk $end
+       $var wire 1 "# en $end
+       $var wire 2 ") pipeline_addr_0 $end
+       $var wire 3 "+ data $end
+       $var wire 1 "B pipeline_valid_0 $end
+       $var wire 3 "Y pipeline_data_0 $end
+       $var wire 1 "f valid $end
+      $upscope $end
+      $scope module io_deq_bits_MPORT $end
+       $var wire 2 2 addr $end
+       $var wire 3 ^ data $end
+       $var wire 1 u clk $end
+       $var wire 1 { en $end
+      $upscope $end
+    $upscope $end
   $upscope $end
 $upscope $end
 $enddefinitions $end
 $dumpvars
-0%
-b000 1
-0&
-0<
-0'
-0=
+0X
+0C
+0"7
+b000 ":
+0"c
+0o
+b00 p
+0R
+0"1
+b00 )
+b00 t
+0V
+b000 =
+b000 "M
+1e
+0"F
+05
+b000 9
+0~
+0a
+0"@
+0D
+0"#
+b00 0
+0x
+b00 y
+b000 "b
+0z
+1S
+b000 "(
+0]
+0r
+0"<
+0@
+0+
+0"Q
+1"A
+b000 /
+b00 &
+0v
+b00 "L
+0"8
+b000 "X
+b000 ";
+0"d
+0"O
+b000 "&
 0>
+b000 "Z
 06
 0!
-07
-0"
-0#
-09
+0"f
+b00 "H
+b000 Y
+b000 "i
+0l
+0"`
+0O
+0"C
 0:
-02
-b000 )
+0".
+b00 "%
+0Q
+0"E
+b00 g
+1*
+04
+0I
+b00 ">
+0"*
+b000 "_
+0b
+0"V
+b00 N
+0"$
+0?
+0"=
+b00 J
+b00 "4
+0u
+b000 "+
+0"T
+b00 "6
+0Z
+0"N
+0"9
+b000 ^
+1"K
+b000 "Y
+0q
+0"e
+0"3
+07
+b00 #
+b000 w
+0"-
+b000 E
+b000 "U
+0P
+0"D
+0"/
 03
-b000 ?
-b000 8
+b000 "
+0|
+b00 K
 0-
-b000 $
-0.
+0"]
+b000 m
+b00 "?
+b00 ""
 b000 ;
-00
-0(
-b000 4
-b000 5
-0*
-0@
-0+
-b000 /
+0c
+0"W
+0"B
+b00 2
+b000 "0
+b00 f
+b00 "P
+b000 i
+b000 L
+0"h
+0_
+b00 "g
+b00 `
+0B
+b00 "J
+0"!
+b000 F
+b000 1
+0n
+0<
+0'
+b00 (
+b00 T
+b00 ")
+b000 "R
+0j
+0"I
+b00 k
+0M
+08
+0",
+0d
+b000 [
+b000 U
+1{
+b00 "'
+0}
+0h
+0"\
+0"G
+b00 "S
+b000 W
+0.
+b000 %
+b000 "5
+0"^
+b000 "a
+0\
+0G
+b00 H
+b00 "2
+b000 "[
+0s
+0A
 0,
+0$
 $end
 #0
-1%
-1.
-1=
-#1
-13
-#6
-03
-1<
-0%
-b010 4
-0.
-b001 5
-1'
-0=
-1(
+1"^
+1Q
+1R
+b01 J
+b01 K
+16
+b001 i
+1"<
+1j
 17
-b001 /
-b001 )
-b010 ?
-1"
-b010 1
+b01 0
+b01 "6
+b01 y
+1"T
+1"!
+1G
+1"7
+b001 "U
+1]
+b01 H
+1"V
+1"N
+1B
+1-
+b01 "P
+b01 "4
+b01 "g
+1o
+1Z
+b01 p
+1"`
+1"-
+b001 "a
+b01 "L
+b001 9
+1$
+b001 W
+b01 "H
+b001 ;
+#1
+1u
+1r
+1"/
+1"$
+1"Q
+15
+1"F
+1|
+1b
+1M
+#6
+0"^
+13
+b001 "_
+14
+0"$
+1"W
+05
+b01 "%
+b011 "X
+b010 "&
+1a
+0"<
+0b
+0M
+1c
+b001 F
+0"T
+b011 "M
+1"8
+1"#
+1I
+0|
+1A
+0u
+1C
+1"3
+1"f
+0"Q
+1"I
+0Z
+b01 "J
+1x
+b010 =
+b01 (
+1>
+0r
+0"/
+b011 U
 1@
-b001 8
-12
-19
-b011 $
-1+
-1,
-b011 ;
+1s
+1"c
+b001 "(
+0"F
+1"G
+1"]
+1"@
+b010 "+
 #11
-13
-#16
-03
-#21
-13
-#26
-03
-#31
-13
-#36
-03
-#41
-13
-#46
-03
-#51
-13
-#56
-03
-#61
-13
-#66
-03
-#71
-13
-#76
-03
-#81
-13
-#86
-03
-#91
-13
-#96
-03
-#101
-13
-#106
-03
-#111
-13
-#116
-03
-#121
-13
-#126
-03
-#131
-13
-#136
-03
-#141
-13
-#146
-03
-#151
-13
-#156
-03
-#161
-13
-#166
-03
-#171
-13
-#176
-03
-#181
-13
-#186
-03
-#191
-13
-#196
-03
-#201
-13
-#206
-03
-0<
-1%
-b000 4
+0Q
+1"B
+b10 "%
+1h
+b10 K
+06
+b010 "Y
+b01 "'
+1b
+1M
+b10 0
+b10 "6
+1d
+0G
+b010 ^
+1"O
+1u
 1.
-b000 5
-0'
-0(
+1"Q
+b01 &
+b010 w
+b10 "4
+0o
+b001 E
+b10 (
+0"`
+1q
+1".
+b01 T
+1?
+b010 "b
+b001 "
+b001 "0
+1V
+b010 9
+1"*
+b001 m
+b010 ;
+b01 g
+0R
+1"$
+15
+b011 ";
 07
-b000 /
-b000 )
-b000 ?
-0"
-b000 1
-0@
-b000 8
-02
-09
-b000 $
+b010 "Z
+b001 /
+b011 1
+0"7
+1z
+b01 ""
+0"V
+0"N
+1|
+1"9
+0-
+b10 "P
+b001 Y
+1'
+b10 "J
+b011 "5
+b010 "a
+1r
+1"/
+b01 #
+b011 "[
+1"F
+1"1
+1l
+1O
+b10 "H
+#16
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#21
+b10 g
+1"$
+15
+b00 "%
+b11 K
+b10 "'
+1b
+1M
+b00 0
+b00 "6
+b01 "?
+b10 ""
+1+
+1|
+b01 t
+1u
+b00 "P
+1"Q
+b10 &
+b11 "4
+b00 "J
+b00 (
+b011 "a
+b10 T
+1r
+1"/
+b10 #
+1"F
+b011 9
+b01 ")
+b11 "H
+1P
+b011 ;
+1n
+#26
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#31
+0"@
+b00 g
+1R
+1"$
+0"W
+15
+b01 K
+0a
+0j
+b00 "'
+1b
+1M
+b01 0
+0c
+b01 "6
+0"!
+b10 "?
+b00 ""
+0]
+0"8
+0"#
 0+
-0,
-b000 ;
+1"N
+1|
+0A
+b10 t
+1"d
+0B
+1u
+b01 "P
+1X
+0C
+0"f
+1"Q
+b00 &
+0"I
+b01 "4
+0"-
+1"`
+b001 "a
+b00 T
+1r
+1"/
+0@
+b00 #
+1"F
+b001 9
+b10 ")
+0$
+0"G
+1:
+b01 "H
+0P
+b001 ;
+0n
+#36
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#41
+1u
+1"$
+0.
+0"B
+1"Q
+15
+1b
+1M
+1r
+1"/
+b00 "?
+1"F
+b00 ")
+0l
+1|
+b00 t
+#46
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#51
+1u
+1r
+1"/
+1"$
+1"Q
+15
+1"F
+1|
+1b
+1M
+#56
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#61
+1u
+1r
+1"/
+1"$
+1"Q
+15
+1"F
+1|
+1b
+1M
+#66
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#71
+1u
+1r
+1"/
+1"$
+1"Q
+15
+1"F
+1|
+1b
+1M
+#76
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#81
+1u
+1r
+1"/
+1"$
+1"Q
+15
+1"F
+1|
+1b
+1M
+#86
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#91
+1u
+1r
+1"/
+1"$
+1"Q
+15
+1"F
+1|
+1b
+1M
+#96
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#101
+1u
+1r
+1"/
+1"$
+1"Q
+15
+1"F
+1|
+1b
+1M
+#106
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#111
+1u
+1r
+1"/
+1"$
+1"Q
+15
+1"F
+1|
+1b
+1M
+#116
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#121
+1u
+1r
+1"/
+1"$
+1"Q
+15
+1"F
+1|
+1b
+1M
+#126
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#131
+1u
+1r
+1"/
+1"$
+1"Q
+15
+1"F
+1|
+1b
+1M
+#136
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#141
+1u
+1r
+1"/
+1"$
+1"Q
+15
+1"F
+1|
+1b
+1M
+#146
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#151
+1u
+1r
+1"/
+1"$
+1"Q
+15
+1"F
+1|
+1b
+1M
+#156
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#161
+1u
+1r
+1"/
+1"$
+1"Q
+15
+1"F
+1|
+1b
+1M
+#166
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#171
+1u
+1r
+1"/
+1"$
+1"Q
+15
+1"F
+1|
+1b
+1M
+#176
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#181
+1u
+1r
+1"/
+1"$
+1"Q
+15
+1"F
+1|
+1b
+1M
+#186
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#191
+1u
+1r
+1"/
+1"$
+1"Q
+15
+1"F
+1|
+1b
+1M
+#196
+0u
+0r
+0"/
+0"$
+0"Q
+05
+0"F
+0|
+0b
+0M
+#201
+1u
+1r
+1"/
+1"$
+1"Q
+15
+1"F
+1|
+1b
+1M
+#206
+0u
+b000 "_
+04
+0"$
+0"3
+0"Q
+05
+b000 "X
+b000 "&
+0x
+b000 =
+0>
+0b
+0M
+0r
+0"/
+b000 F
+b000 U
+0"c
+b000 "(
+0"F
+b000 "M
+0I
+0|
+b000 "+
 #211
-13
+1u
+1r
+1"/
+b000 "
+1"$
+1"Q
+15
+1"F
+b000 ";
+b000 "Y
+1|
+1b
+1M
 #216
-03
+0|

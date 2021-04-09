@@ -1,7 +1,14 @@
-[0m[[0m[33mwarn[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab7/Exercise1_Lab7.scala:11:5: Reference to uninitialized value io[0m
-[0m[[0m[33mwarn[0m] [0m[0m    io.out.bits:=0.U[0m
-[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
-[0m[[0m[33mwarn[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab7/Exercise1_Lab7.scala:12:5: Reference to uninitialized value io[0m
-[0m[[0m[33mwarn[0m] [0m[0m    io.out.valid:=false.B[0m
-[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab7/Task1_Lab6.scala:1:1: [0m
+[0m[[0m[0minfo[0m] [0m[0mFound names but no class, trait or object is defined in the compilation unit.[0m
+[0m[[0m[0minfo[0m] [0m[0mThe incremental compiler cannot record the dependency information in such case.[0m
+[0m[[0m[0minfo[0m] [0m[0mSome errors like unused import referring to a non-existent class might not be reported.[0m
+[0m[[0m[0minfo[0m] [0m[0m    [0m
+[0m[[0m[0minfo[0m] [0m[0mpackage Lab7[0m
+[0m[[0m[0minfo[0m] [0m[0m^[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab7/Task1_Lab6.scala:1:1: [0m
+[0m[[0m[0minfo[0m] [0m[0mFound top level imports but no class, trait or object is defined in the compilation unit.[0m
+[0m[[0m[0minfo[0m] [0m[0mThe incremental compiler cannot record the dependency information in such case.[0m
+[0m[[0m[0minfo[0m] [0m[0mSome errors like unused import referring to a non-existent class might not be reported.[0m
+[0m[[0m[0minfo[0m] [0m[0m    [0m
+[0m[[0m[0minfo[0m] [0m[0mpackage Lab7[0m
+[0m[[0m[0minfo[0m] [0m[0m^[0m

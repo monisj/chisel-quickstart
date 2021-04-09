@@ -4,48 +4,22 @@
     "file":"test_run_dir/Test7/Exercise1_Lab7.lo.fir"
   },
   {
-    "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~Exercise1_Lab7|Exercise1_Lab7>io_in_1_ready",
-    "sources":[
-      "~Exercise1_Lab7|Exercise1_Lab7>io_out_ready",
-      "~Exercise1_Lab7|Exercise1_Lab7>io_in_0_valid"
-    ]
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~Exercise1_Lab7|Queue",
+    "duplicate":"~Exercise1_Lab7|Exercise1_Lab7/queue1:Queue",
+    "index":0.0
   },
   {
-    "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~Exercise1_Lab7|Exercise1_Lab7>io_in_2_ready",
-    "sources":[
-      "~Exercise1_Lab7|Exercise1_Lab7>io_out_ready",
-      "~Exercise1_Lab7|Exercise1_Lab7>io_in_0_valid",
-      "~Exercise1_Lab7|Exercise1_Lab7>io_in_1_valid"
-    ]
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~Exercise1_Lab7|Queue_1",
+    "duplicate":"~Exercise1_Lab7|Exercise1_Lab7/queue2:Queue",
+    "index":0.25
   },
   {
-    "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~Exercise1_Lab7|Exercise1_Lab7>io_out_valid",
-    "sources":[
-      "~Exercise1_Lab7|Exercise1_Lab7>io_in_2_valid",
-      "~Exercise1_Lab7|Exercise1_Lab7>io_in_0_valid",
-      "~Exercise1_Lab7|Exercise1_Lab7>io_in_1_valid"
-    ]
-  },
-  {
-    "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~Exercise1_Lab7|Exercise1_Lab7>io_in_0_ready",
-    "sources":[
-      "~Exercise1_Lab7|Exercise1_Lab7>io_out_ready"
-    ]
-  },
-  {
-    "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~Exercise1_Lab7|Exercise1_Lab7>io_out_bits",
-    "sources":[
-      "~Exercise1_Lab7|Exercise1_Lab7>io_in_0_valid",
-      "~Exercise1_Lab7|Exercise1_Lab7>io_in_0_bits",
-      "~Exercise1_Lab7|Exercise1_Lab7>io_in_1_valid",
-      "~Exercise1_Lab7|Exercise1_Lab7>io_in_1_bits",
-      "~Exercise1_Lab7|Exercise1_Lab7>io_in_2_bits"
-    ]
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~Exercise1_Lab7|Queue_2",
+    "duplicate":"~Exercise1_Lab7|Exercise1_Lab7/queue3:Queue",
+    "index":0.5
   },
   {
     "class":"firrtl.EmitCircuitAnnotation",

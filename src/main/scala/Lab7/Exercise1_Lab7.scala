@@ -11,9 +11,13 @@ class Exercise1_Lab7 (val n : Int) extends Module {
     val io = IO(new Arbiter_2(n))
     io.out.bits:=0.U
     io.out.valid:=false.B
+
+    val queue1 = Queue(io.in(0),n)
+    val queue2 = Queue(io.in(1),n)
+    val queue3 = Queue(io.in(2),n)
     val arb_priority = Module (new Arbiter(UInt(),n))
-    io.in(0) <> arb_priority.io.in(0) 
-    io.in(1) <> arb_priority.io.in(1) 
-    io.in(2) <> arb_priority.io.in(2) 
+    queue1 <> arb_priority.io.in(0) 
+    queue2 <> arb_priority.io.in(1) 
+    queue3 <> arb_priority.io.in(2) 
     io.out <> arb_priority.io.out
 }

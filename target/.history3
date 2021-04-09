@@ -142,3 +142,4 @@
 1617881161723:testOnly Lab7.Ex_test1 -- -DwriteVcd=1
 1617881429357:testOnly Lab6.Task4_test -- -DwriteVcd=1
 1617881435529:testOnly Lab7.Ex_test1 -- -DwriteVcd=1
+1617978970023:testOnly Lab7.Task1_test -- -DwriteVcd=1
