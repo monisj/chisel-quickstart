@@ -1,7 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab7/Task1_test.scala:12:26: not found: value Dontcare[0m
-[0m[[0m[31merror[0m] [0m[0m            c.io.f2.poke(Dontcare)[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab7/Task1_test.scala:14:26: not found: value Dontcare[0m
-[0m[[0m[31merror[0m] [0m[0m            c.io.r2.poke(Dontcare)[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab7/Task2_test.scala:10:18: not found: type Task2_Lab7[0m
+[0m[[0m[31merror[0m] [0m[0m        test(new Task2_Lab7){c =>[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

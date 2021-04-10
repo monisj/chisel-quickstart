@@ -93,3 +93,9 @@
 [0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":3,"message":"\u001b[36mRun completed in 1 second, 892 milliseconds.\u001b[0m\n\u001b[36mTotal number of tests run: 1\u001b[0m\n\u001b[36mSuites: completed 1, aborted 0\u001b[0m\n\u001b[36mTests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0\u001b[0m\n\u001b[32mAll tests passed.\u001b[0m"})[0m
 [0m[[0m[32msuccess[0m] [0m[0mTotal time: 2 s, completed Apr 9, 2021, 7:49:57 PM[0m
 [0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled notification received: $/cancelRequest: JsonRpcNotificationMessage(2.0, $/cancelRequest, {"id":5})[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition json request: {"textDocument":{"uri":"file:///home/monis/Desktop/chisel-quickstart/src/test/scala/Lab7/Task1_test.scala"},"position":{"line":10,"character":12}}[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition found line:             c.io.f1.poke(true.B)[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition json request: {"textDocument":{"uri":"file:///home/monis/Desktop/chisel-quickstart/src/test/scala/Lab7/Task1_test.scala"},"position":{"line":10,"character":12}}[0m
+[0m[[0m[0mdebug[0m] [0m[0mlsp-definition found line:             c.io.f1.poke(true.B)[0m
+[0m[[0m[0mdebug[0m] [0m[0mUnhandled notification received: $/cancelRequest: JsonRpcNotificationMessage(2.0, $/cancelRequest, {"id":6})[0m

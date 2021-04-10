@@ -1,20 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab7/Task1_Lab7.scala:23:10: missing argument list for method apply in object when[0m
-[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
-[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `apply _` or `apply(_)(_)(_,_)` instead of `apply`.[0m
-[0m[[0m[31merror[0m] [0m[0m    when ((state === s2) && (io.f1 === false.B && io.r1 === false.B)) || ((state === s2 | state ===s3) && (io.f1 === true.B)) || (state === s2  && (io.f1 === false.B) && (io.r1 === true.B)){[0m
-[0m[[0m[31merror[0m] [0m[0m         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab7/Task1_Lab7.scala:23:168: overloaded method value apply with alternatives:[0m
-[0m[[0m[31merror[0m] [0m[0m  (x: chisel3.UInt)chisel3.Bool <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (x: Int)chisel3.Bool <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (x: BigInt)chisel3.Bool[0m
-[0m[[0m[31merror[0m] [0m[0m cannot be applied to (Unit)[0m
-[0m[[0m[31merror[0m] [0m[0m    when ((state === s2) && (io.f1 === false.B && io.r1 === false.B)) || ((state === s2 | state ===s3) && (io.f1 === true.B)) || (state === s2  && (io.f1 === false.B) && (io.r1 === true.B)){[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                                                                                                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab7/Task1_Lab7.scala:25:189: overloaded method value apply with alternatives:[0m
-[0m[[0m[31merror[0m] [0m[0m  (x: chisel3.UInt)chisel3.Bool <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (x: Int)chisel3.Bool <and>[0m
-[0m[[0m[31merror[0m] [0m[0m  (x: BigInt)chisel3.Bool[0m
-[0m[[0m[31merror[0m] [0m[0m cannot be applied to (Unit)[0m
-[0m[[0m[31merror[0m] [0m[0m    }.elsewhen((state === s4 | state === s3) && (io.f2 === true.B)) || (state === s4 && (io.f2 === false.B && io.r2 === false.B)) || ((state === s4 | state === s5) && (io.f2 === false.B ) && (io.r2 === true.B)){[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                                                                                                                            ^[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab7/Task2_lab7.scala:17:20: not found: value RegIint[0m
+[0m[[0m[31merror[0m] [0m[0m    val register = RegIint(0.U(8.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
