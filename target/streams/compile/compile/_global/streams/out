@@ -1,7 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab8/Exercise1_Lab8.scala:10:42: method width in class Aggregate cannot be accessed in Lab8.Mem_IO[0m
-[0m[[0m[31merror[0m] [0m[0m    val dataIn = Input ( Vec (4 , UInt ( width . W ) ) )[0m
-[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab8/Exercise1_Lab8.scala:11:44: method width in class Aggregate cannot be accessed in Lab8.Mem_IO[0m
-[0m[[0m[31merror[0m] [0m[0m    val dataOut = Output ( Vec (4 , UInt ( width . W ) ) )[0m
-[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab8/Exercise2_Lab8.scala:5:7: Mem_IO is already defined as class Mem_IO[0m
+[0m[[0m[31merror[0m] [0m[0mclass Mem_IO (width : Int = 8) extends Bundle {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
