@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab7/Task2_test.scala:10:18: not found: type Task2_Lab7[0m
-[0m[[0m[31merror[0m] [0m[0m        test(new Task2_Lab7){c =>[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab8/Ex_test1.scala:11:18: value enalbe is not a member of Lab8.Mem_IO[0m
+[0m[[0m[31merror[0m] [0m[0m            c.io.enalbe.poke(true.B)[0m
 [0m[[0m[31merror[0m] [0m[0m                 ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
