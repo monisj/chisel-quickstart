@@ -1,0 +1,882 @@
+$date
+2021-04-12T09:47+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module Task1_Lab8 $end
+ $var wire 1 " queue2 $end
+ $var wire 32 / memory4 $end
+ $var wire 32 B io_requestor_2_bits $end
+ $var wire 1 D io_write $end
+ $var wire 1 E io_out_ready $end
+ $var wire 32 G memory1 $end
+ $var wire 5 M io_Readaddr $end
+ $var wire 1 X io_requestor_1_valid $end
+ $var wire 1 Y queue1 $end
+ $var wire 1 c queue4 $end
+ $var wire 32 e io_requestor_3_bits $end
+ $var wire 32 l io_memory_out_0 $end
+ $var wire 1 r io_requestor_2_ready $end
+ $var wire 1 x io_requestor_0_valid $end
+ $var wire 32 "! memory3 $end
+ $var wire 32 "" io_memory_out_3 $end
+ $var wire 4 "5 io_out_bits $end
+ $var wire 32 "D io_memory_out_2 $end
+ $var wire 1 "F clock $end
+ $var wire 1 "P io_requestor_3_valid $end
+ $var wire 5 "T io_Writeaddr $end
+ $var wire 1 "W queue3 $end
+ $var wire 1 "Y io_out_valid $end
+ $var wire 1 "c io_requestor_1_ready $end
+ $var wire 32 "k io_requestor_0_bits $end
+ $var wire 1 "r arb_priority $end
+ $var wire 32 "y memory2 $end
+ $var wire 1 #" io_requestor_2_valid $end
+ $var wire 1 #0 io_requestor_0_ready $end
+ $var wire 1 #2 reset $end
+ $var wire 32 #6 io_requestor_1_bits $end
+ $var wire 1 #@ io_requestor_3_ready $end
+ $var wire 32 #B io_memory_out_1 $end
+  $scope module queue3 $end
+   $var wire 1 1 _GEN_5 $end
+   $var wire 1 P _T $end
+   $var wire 1 U io_enq_ready $end
+   $var wire 1 i io_deq_valid $end
+   $var wire 1 u reset $end
+   $var wire 32 y ram $end
+   $var wire 1 "G do_deq $end
+   $var wire 1 "a maybe_full $end
+   $var wire 1 "d io_enq_valid $end
+   $var wire 1 "i empty $end
+   $var wire 1 "{ io_deq_ready $end
+   $var wire 1 #$ do_enq $end
+   $var wire 1 #/ clock $end
+   $var wire 32 #8 io_enq_bits $end
+   $var wire 32 #< io_deq_bits $end
+    $scope module ram $end
+     $var wire 32 % MPORT $end
+      $scope module MPORT $end
+       $var wire 1 $ addr $end
+       $var wire 1 9 pipeline_valid_0 $end
+       $var wire 1 A clk $end
+       $var wire 32 m data $end
+       $var wire 1 "% en $end
+       $var wire 1 ": pipeline_addr_0 $end
+       $var wire 32 "p pipeline_data_0 $end
+       $var wire 1 "x mask $end
+       $var wire 1 #' valid $end
+      $upscope $end
+      $scope module io_deq_bits_MPORT $end
+       $var wire 1 ~ addr $end
+       $var wire 1 "& clk $end
+       $var wire 32 "g data $end
+       $var wire 1 #( en $end
+      $upscope $end
+    $upscope $end
+  $upscope $end
+  $scope module queue4 $end
+   $var wire 1 ) reset $end
+   $var wire 1 3 io_enq_ready $end
+   $var wire 1 : io_deq_valid $end
+   $var wire 1 V do_deq $end
+   $var wire 1 ". maybe_full $end
+   $var wire 1 "= io_enq_valid $end
+   $var wire 1 "B empty $end
+   $var wire 1 "L io_deq_ready $end
+   $var wire 1 "M do_enq $end
+   $var wire 1 "S _GEN_5 $end
+   $var wire 32 "_ ram $end
+   $var wire 1 "b clock $end
+   $var wire 1 "e _T $end
+   $var wire 32 "~ io_enq_bits $end
+   $var wire 32 ## io_deq_bits $end
+    $scope module ram $end
+     $var wire 32 n MPORT $end
+      $scope module MPORT $end
+       $var wire 1 & en $end
+       $var wire 32 * data $end
+       $var wire 1 w pipeline_valid_0 $end
+       $var wire 1 "* pipeline_addr_0 $end
+       $var wire 1 "7 mask $end
+       $var wire 32 "X pipeline_data_0 $end
+       $var wire 1 "\ addr $end
+       $var wire 1 #- valid $end
+       $var wire 1 #9 clk $end
+      $upscope $end
+      $scope module io_deq_bits_MPORT $end
+       $var wire 32 Q data $end
+       $var wire 1 a clk $end
+       $var wire 1 "[ addr $end
+       $var wire 1 #, en $end
+      $upscope $end
+    $upscope $end
+  $upscope $end
+  $scope module queue1 $end
+   $var wire 1 H io_deq_ready $end
+   $var wire 1 S _T $end
+   $var wire 32 Z io_deq_bits $end
+   $var wire 32 [ io_enq_bits $end
+   $var wire 1 ] empty $end
+   $var wire 1 ` io_enq_valid $end
+   $var wire 1 "' _GEN_5 $end
+   $var wire 1 "( do_enq $end
+   $var wire 1 "C maybe_full $end
+   $var wire 1 "H io_enq_ready $end
+   $var wire 1 "N clock $end
+   $var wire 1 "U io_deq_valid $end
+   $var wire 1 #> reset $end
+   $var wire 1 #F do_deq $end
+   $var wire 32 #G ram $end
+    $scope module ram $end
+     $var wire 32 "n MPORT $end
+      $scope module MPORT $end
+       $var wire 32 # pipeline_data_0 $end
+       $var wire 1 "+ mask $end
+       $var wire 1 "2 pipeline_valid_0 $end
+       $var wire 1 "O addr $end
+       $var wire 1 "v pipeline_addr_0 $end
+       $var wire 1 "w en $end
+       $var wire 1 "} clk $end
+       $var wire 1 #7 valid $end
+       $var wire 32 #? data $end
+      $upscope $end
+      $scope module io_deq_bits_MPORT $end
+       $var wire 32 ; data $end
+       $var wire 1 j en $end
+       $var wire 1 "Z clk $end
+       $var wire 1 "u addr $end
+      $upscope $end
+    $upscope $end
+  $upscope $end
+  $scope module arb_priority $end
+   $var wire 1 . io_in_2_valid $end
+   $var wire 1 7 io_in_0_ready $end
+   $var wire 32 = io_in_2_bits $end
+   $var wire 1 C grant_2 $end
+   $var wire 1 L io_in_3_ready $end
+   $var wire 32 g io_in_3_bits $end
+   $var wire 1 q _io_out_valid_T $end
+   $var wire 32 t io_out_bits $end
+   $var wire 1 } io_out_ready $end
+   $var wire 1 ") io_in_1_valid $end
+   $var wire 1 "- _grant_T $end
+   $var wire 1 "4 grant_1 $end
+   $var wire 1 "< io_in_2_ready $end
+   $var wire 32 "> _GEN_1 $end
+   $var wire 32 "` io_in_0_bits $end
+   $var wire 1 "m io_in_0_valid $end
+   $var wire 32 "s _GEN_3 $end
+   $var wire 1 #% io_in_3_valid $end
+   $var wire 1 #* io_out_valid $end
+   $var wire 1 #3 _grant_T_1 $end
+   $var wire 1 #5 grant_3 $end
+   $var wire 32 #; io_in_1_bits $end
+   $var wire 1 #= io_in_1_ready $end
+  $upscope $end
+  $scope module queue2 $end
+   $var wire 1 8 empty $end
+   $var wire 1 ? io_enq_valid $end
+   $var wire 32 J io_enq_bits $end
+   $var wire 1 K maybe_full $end
+   $var wire 1 O _GEN_5 $end
+   $var wire 1 W do_enq $end
+   $var wire 32 f ram $end
+   $var wire 1 h clock $end
+   $var wire 1 z io_enq_ready $end
+   $var wire 1 "8 io_deq_valid $end
+   $var wire 1 "j _T $end
+   $var wire 1 "q reset $end
+   $var wire 1 "| do_deq $end
+   $var wire 32 #A io_deq_bits $end
+   $var wire 1 #C io_deq_ready $end
+    $scope module ram $end
+     $var wire 32 #1 MPORT $end
+      $scope module MPORT $end
+       $var wire 1 6 mask $end
+       $var wire 1 k addr $end
+       $var wire 1 "9 clk $end
+       $var wire 1 "I en $end
+       $var wire 1 "R pipeline_addr_0 $end
+       $var wire 32 "V data $end
+       $var wire 1 "z pipeline_valid_0 $end
+       $var wire 32 #: pipeline_data_0 $end
+       $var wire 1 #E valid $end
+      $upscope $end
+      $scope module io_deq_bits_MPORT $end
+       $var wire 1 > addr $end
+       $var wire 32 | data $end
+       $var wire 1 "; clk $end
+       $var wire 1 "E en $end
+      $upscope $end
+    $upscope $end
+  $upscope $end
+  $scope module memory2 $end
+   $var wire 32 @ MPORT_1 $end
+    $scope module MPORT_1 $end
+     $var wire 32 ! data $end
+     $var wire 10 ( pipeline_addr_0 $end
+     $var wire 1 \ en $end
+     $var wire 32 "1 pipeline_data_0 $end
+     $var wire 1 "6 mask $end
+     $var wire 1 "@ valid $end
+     $var wire 1 "K pipeline_valid_0 $end
+     $var wire 10 "f addr $end
+     $var wire 1 #& clk $end
+    $upscope $end
+    $scope module io_memory_out_1_MPORT $end
+     $var wire 1 - clk $end
+     $var wire 32 _ data $end
+     $var wire 1 s en $end
+     $var wire 10 #D addr $end
+    $upscope $end
+  $upscope $end
+  $scope module memory3 $end
+   $var wire 32 "# MPORT_2 $end
+    $scope module io_memory_out_2_MPORT $end
+     $var wire 1 ' clk $end
+     $var wire 10 2 addr $end
+     $var wire 32 p data $end
+     $var wire 1 { en $end
+    $upscope $end
+    $scope module MPORT_2 $end
+     $var wire 32 + data $end
+     $var wire 1 5 pipeline_valid_0 $end
+     $var wire 1 ^ en $end
+     $var wire 10 "$ pipeline_addr_0 $end
+     $var wire 1 "0 mask $end
+     $var wire 10 "^ addr $end
+     $var wire 1 "l valid $end
+     $var wire 32 #) pipeline_data_0 $end
+     $var wire 1 #. clk $end
+    $upscope $end
+  $upscope $end
+  $scope module memory4 $end
+   $var wire 32 "] MPORT_3 $end
+    $scope module MPORT_3 $end
+     $var wire 32 , data $end
+     $var wire 32 R pipeline_data_0 $end
+     $var wire 1 T valid $end
+     $var wire 1 v pipeline_valid_0 $end
+     $var wire 1 "/ mask $end
+     $var wire 1 "A en $end
+     $var wire 10 "h addr $end
+     $var wire 10 "t pipeline_addr_0 $end
+     $var wire 1 #H clk $end
+    $upscope $end
+    $scope module io_memory_out_3_MPORT $end
+     $var wire 1 4 clk $end
+     $var wire 32 N data $end
+     $var wire 1 "3 en $end
+     $var wire 10 #4 addr $end
+    $upscope $end
+  $upscope $end
+  $scope module memory1 $end
+   $var wire 32 #+ MPORT $end
+    $scope module MPORT $end
+     $var wire 10 0 addr $end
+     $var wire 1 F pipeline_valid_0 $end
+     $var wire 1 I clk $end
+     $var wire 10 b pipeline_addr_0 $end
+     $var wire 32 o data $end
+     $var wire 32 "? pipeline_data_0 $end
+     $var wire 1 "J valid $end
+     $var wire 1 "Q en $end
+     $var wire 1 "o mask $end
+    $upscope $end
+    $scope module io_memory_out_0_MPORT $end
+     $var wire 10 < addr $end
+     $var wire 1 d en $end
+     $var wire 32 ", data $end
+     $var wire 1 #! clk $end
+    $upscope $end
+  $upscope $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+b00000000000000000000000000000000 n
+0X
+0C
+0"L
+0#-
+0&
+b00000000000000000000000000000000 "p
+b00000000000000000000000000000000 ">
+0"c
+1"6
+b00000000000000000000000000000000 #6
+0"P
+b00000000000000000000000000000000 "#
+b0000000000 (
+1"0
+0"|
+b00000 "T
+0#H
+b00000000000000000000000000000000 l
+0V
+0"J
+b0000000000 #4
+0"v
+b00000000000000000000000000000000 Q
+b00000000000000000000000000000000 "`
+b00000000000000000000000000000000 #A
+0"[
+0"F
+0#'
+05
+0")
+0~
+0"r
+0a
+0L
+0"@
+1"E
+0#!
+0D
+b00000000000000000000000000000000 "y
+b0000000000 "f
+b0000000000 "^
+0x
+0F
+0":
+0)
+b00000000000000000000000000000000 "s
+0z
+0r
+0]
+0"Q
+0"<
+0#2
+0H
+1j
+b00000000000000000000000000000000 "X
+0W
+b00000000000000000000000000000000 ;
+0v
+0"j
+0"U
+b00000000000000000000000000000000 Z
+0"8
+0"l
+0"d
+0"O
+0#0
+0#E
+0>
+0"2
+b00000000000000000000000000000000 "k
+0"4
+0"}
+b00000000000000000000000000000000 m
+0"K
+b00000000000000000000000000000000 e
+0O
+0"C
+0#$
+0:
+0".
+b00000000000000000000000000000000 "g
+1d
+0"w
+b00000000000000000000000000000000 |
+0"Z
+0#&
+0I
+04
+0"(
+b00000000000000000000000000000000 J
+b00000000000000000000000000000000 "~
+b0000000000 #D
+b00000000000000000000000000000000 #B
+b00000000000000000000000000000000 "D
+0`
+0"*
+1"/
+b00000000000000000000000000000000 /
+1"x
+0w
+b00000000000000000000000000000000 "1
+0#7
+0E
+0"u
+b00000000000000000000000000000000 "]
+b00000000000000000000000000000000 #)
+0?
+b0000000000 0
+b00000000000000000000000000000000 #8
+b00000000000000000000000000000000 t
+b00000000000000000000000000000000 _
+0"=
+b00000000000000000000000000000000 B
+b0000 "5
+1s
+0u
+0"i
+0#5
+b00000000000000000000000000000000 p
+b00000000000000000000000000000000 [
+0"N
+0#/
+b00000000000000000000000000000000 "!
+0"9
+1#,
+b0000000000 "t
+b00000000000000000000000000000000 !
+0q
+0"e
+b0000000000 b
+0i
+0T
+0#F
+0"H
+07
+0"
+b00000000000000000000000000000000 #
+0k
+0#@
+09
+0"-
+1#(
+b00000000000000000000000000000000 #G
+b0000000000 "h
+0"a
+b00000000000000000000000000000000 f
+0P
+0#%
+03
+0"'
+0-
+0"z
+0#>
+b00000000000000000000000000000000 y
+0c
+0"W
+0"B
+b00000000000000000000000000000000 G
+01
+0"%
+b00000000000000000000000000000000 *
+b00000000000000000000000000000000 #?
+0"Y
+b00000000000000000000000000000000 ",
+b00000000000000000000000000000000 ,
+b00000 M
+0"S
+b00000000000000000000000000000000 #;
+1"o
+b00000000000000000000000000000000 o
+0Y
+0"M
+0#.
+b00000000000000000000000000000000 =
+0'
+b00000000000000000000000000000000 "?
+0S
+b00000000000000000000000000000000 ""
+b0000000000 "$
+1"7
+b00000000000000000000000000000000 "V
+0"{
+0U
+0"I
+0#*
+b00000000000000000000000000000000 N
+16
+08
+b00000000000000000000000000000000 #1
+1"3
+1"+
+0"b
+0#C
+b00000000000000000000000000000000 g
+b00000000000000000000000000000000 R
+b00000000000000000000000000000000 #+
+1{
+0}
+0h
+0"\
+0"G
+0#=
+0K
+0"q
+b0000000000 <
+0.
+b00000000000000000000000000000000 #<
+0"A
+0#"
+0"m
+0#9
+0\
+0";
+0"&
+b00000000000000000000000000000000 @
+b00000000000000000000000000000000 +
+b00000000000000000000000000000000 "_
+b00000000000000000000000000000000 ##
+0^
+0"R
+0#3
+0A
+b0000000000 2
+0$
+b00000000000000000000000000000000 "n
+b00000000000000000000000000000000 #:
+b00000000000000000000000000000000 %
+$end
+#0
+13
+1u
+1#@
+1C
+1"B
+1#2
+1"4
+1)
+1r
+1"q
+1U
+1"i
+1#5
+1"c
+18
+1z
+1]
+1#>
+1"H
+1#0
+#1
+1-
+14
+1h
+1#9
+1#H
+1'
+1";
+1"&
+1"}
+1a
+1"Z
+1"b
+1#&
+1"F
+1#.
+1I
+1#/
+1"9
+1A
+1"N
+1#!
+#6
+04
+b00000000000000000000000000000010 #8
+0h
+1S
+1"%
+1"'
+1"S
+1"j
+b00000000000000000000000000000001 #6
+b00000000000000000000000000000011 *
+0#.
+1"M
+0I
+0A
+1#E
+1"d
+0u
+1`
+1X
+0#2
+1&
+1"I
+0"}
+1?
+1"w
+0"b
+0#&
+1"(
+b00000000000000000000000000000010 m
+1P
+1#"
+b00000000000000000000000000000001 J
+0#9
+1#$
+0";
+0"&
+0a
+0"Z
+1"=
+0"q
+11
+b00000000000000000000000000000011 e
+b00000000000000000000000000000001 "V
+1#7
+0#/
+0"9
+0"N
+b00000000000000000000000000000010 B
+0-
+1"e
+1"P
+0#H
+0'
+1x
+b00000000000000000000000000000011 "~
+0)
+1#-
+0"F
+1#'
+1W
+1O
+0#>
+0#!
+#11
+b00000000000000000000000000000011 Q
+0#@
+14
+0"B
+b00000000000000000000000000000011 ##
+0"%
+1h
+0S
+1K
+b00000000000000000000000000000001 #:
+1"Y
+b00000000000000000000000000000010 "p
+b00000000000000000000000000000010 ">
+0"j
+1"U
+1#.
+0"M
+1"8
+1I
+1A
+0#E
+0#0
+1"2
+0C
+1.
+0&
+0"I
+1w
+0"4
+1#*
+1"}
+b00000000000000000000000000000010 =
+b00000000000000000000000000000001 #A
+1".
+1q
+0"w
+1"b
+1#&
+0"(
+19
+0P
+b00000000000000000000000000000001 "s
+03
+b00000000000000000000000000000011 g
+1#9
+b00000000000000000000000000000011 "X
+0#$
+1"C
+1";
+1i
+1"&
+1a
+b00000000000000000000000000000001 #;
+1"Z
+1#3
+0"i
+0#5
+0z
+0]
+0#7
+1#/
+1"9
+b00000000000000000000000000000001 |
+1"N
+1"m
+1-
+0"e
+1#H
+b00000000000000000000000000000010 "g
+1'
+1"-
+1"a
+0#-
+1#%
+0r
+0U
+0"c
+08
+b00000000000000000000000000000010 #<
+1"F
+0#'
+1")
+0W
+1"z
+1:
+0"H
+1#!
+#16
+0-
+04
+0h
+0#9
+0#H
+0'
+0";
+0"&
+0"}
+0a
+0"Z
+0"b
+0#&
+0"F
+0#.
+0I
+0#/
+0"9
+0A
+0"N
+0#!
+#21
+1-
+0"2
+14
+1h
+1#9
+1#H
+0w
+1'
+1";
+1"&
+1"}
+1a
+1"Z
+1"b
+1#&
+1"F
+09
+1#.
+0"z
+1I
+1#/
+1"9
+1A
+1"N
+1#!
+#26
+0-
+04
+0h
+0#9
+0#H
+0'
+0";
+0"&
+0"}
+0a
+0"Z
+0"b
+0#&
+0"F
+0#.
+0I
+0#/
+0"9
+0A
+0"N
+0#!
+#31
+1-
+14
+1h
+1#9
+1#H
+1'
+1";
+1"&
+1"}
+1a
+1"Z
+1"b
+1#&
+1"F
+1#.
+1I
+1#/
+1"9
+1A
+1"N
+1#!
+#36
+0#"
+04
+b00000000000000000000000000000000 #8
+b00000000000000000000000000000000 J
+0h
+0#9
+0";
+0"&
+0a
+0"Z
+0"=
+b00000000000000000000000000000000 e
+b00000000000000000000000000000000 #6
+b00000000000000000000000000000000 *
+0#.
+b00000000000000000000000000000000 "V
+0I
+0#/
+0"9
+0A
+0"N
+0"d
+b00000000000000000000000000000000 B
+0-
+0`
+0"P
+0X
+0#H
+0'
+0x
+0"}
+b00000000000000000000000000000000 "~
+0?
+0"b
+0#&
+0"F
+b00000000000000000000000000000000 m
+0#!
+#41
+1-
+14
+1h
+1#9
+1#H
+b00000000000000000000000000000000 "X
+1'
+1";
+1"&
+b00000000000000000000000000000000 #:
+1"}
+1a
+1"Z
+b00000000000000000000000000000000 "p
+1"b
+1#&
+1"F
+1#.
+1I
+1#/
+1"9
+1A
+1"N
+1#!
+#46
+0"F

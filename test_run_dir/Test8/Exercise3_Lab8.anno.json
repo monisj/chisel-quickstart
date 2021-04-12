@@ -1,0 +1,28 @@
+[
+  {
+    "class":"firrtl.stage.FirrtlFileAnnotation",
+    "file":"test_run_dir/Test8/Exercise3_Lab8.lo.fir"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Exercise3_Lab8|Exercise3_Lab8>io_inst",
+    "sources":[
+      "~Exercise3_Lab8|Exercise3_Lab8>io_addr"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.LowFirrtlEmitter"
+  },
+  {
+    "class":"firrtl.annotations.LoadMemoryAnnotation",
+    "target":"Exercise3_Lab8.Exercise3_Lab8.i_mem",
+    "fileName":"/home/monis/Desktop/abc.txt",
+    "hexOrBinary":"h",
+    "originalMemoryNameOpt":"i_mem"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"test_run_dir/Test8"
+  }
+]

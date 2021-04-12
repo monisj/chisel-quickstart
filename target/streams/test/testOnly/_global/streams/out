@@ -1,10 +1,10 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(Lab8.Ex_test2, org.scalatest.tools.Framework$$anon$1@9fc9d5a, false, [SuiteSelector])[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mEx_test2:[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(Lab8.Ex_test3, org.scalatest.tools.Framework$$anon$1@486f87c8, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEx_test3:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- Test8[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 2 seconds, 934 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 2 seconds, 19 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 1[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Lab8.Ex_test2[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Lab8.Ex_test3[0m

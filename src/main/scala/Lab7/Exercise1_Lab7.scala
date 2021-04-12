@@ -12,6 +12,8 @@ class Exercise1_Lab7 (val n : Int) extends Module {
     io.out.bits:=0.U
     io.out.valid:=false.B
 
+
+
     val queue1 = Queue(io.in(0),n)
     val queue2 = Queue(io.in(1),n)
     val queue3 = Queue(io.in(2),n)
@@ -20,4 +22,6 @@ class Exercise1_Lab7 (val n : Int) extends Module {
     queue2 <> arb_priority.io.in(1) 
     queue3 <> arb_priority.io.in(2) 
     io.out <> arb_priority.io.out
+
+    
 }

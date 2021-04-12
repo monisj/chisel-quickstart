@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab8/Ex_test1.scala:11:18: value enalbe is not a member of Lab8.Mem_IO[0m
-[0m[[0m[31merror[0m] [0m[0m            c.io.enalbe.poke(true.B)[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/test/scala/Lab8/Task1_test.scala:11:18: value write is not a member of chisel3.Bundle{val memory_out: chisel3.Vec[chisel3.UInt]; val requestor: chisel3.Vec[chisel3.util.DecoupledIO[chisel3.UInt]]; val Readaddr: chisel3.UInt; val Writeaddr: chisel3.UInt}[0m
+[0m[[0m[31merror[0m] [0m[0m            c.io.write.poke(true.B)[0m
 [0m[[0m[31merror[0m] [0m[0m                 ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
