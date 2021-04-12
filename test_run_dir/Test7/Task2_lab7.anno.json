@@ -7,16 +7,14 @@
     "class":"firrtl.transforms.CombinationalPath",
     "sink":"~Task2_lab7|Task2_lab7>io_flag",
     "sources":[
-      "~Task2_lab7|Task2_lab7>io_start",
-      "~Task2_lab7|Task2_lab7>io_in"
+      "~Task2_lab7|Task2_lab7>io_start"
     ]
   },
   {
     "class":"firrtl.transforms.CombinationalPath",
     "sink":"~Task2_lab7|Task2_lab7>io_out",
     "sources":[
-      "~Task2_lab7|Task2_lab7>io_start",
-      "~Task2_lab7|Task2_lab7>io_in"
+      "~Task2_lab7|Task2_lab7>io_start"
     ]
   },
   {
