@@ -134,7 +134,7 @@ circuit Task1_Lab8 :
     inst queue3 of Queue @[Decoupled.scala 296:21]
     inst queue4 of Queue @[Decoupled.scala 296:21]
     inst arb_priority of Arbiter @[Task1_Lab8.scala 24:31]
-    mem memory1 : @[Task1_Lab8.scala 32:23]
+    mem memory1 : @[Task1_Lab8.scala 33:23]
       data-type => UInt<32>
       depth => 1024
       read-latency => 0
@@ -142,7 +142,7 @@ circuit Task1_Lab8 :
       reader => io_memory_out_0_MPORT
       writer => MPORT
       read-under-write => undefined
-    mem memory2 : @[Task1_Lab8.scala 33:23]
+    mem memory2 : @[Task1_Lab8.scala 34:23]
       data-type => UInt<32>
       depth => 1024
       read-latency => 0
@@ -150,7 +150,7 @@ circuit Task1_Lab8 :
       reader => io_memory_out_1_MPORT
       writer => MPORT_1
       read-under-write => undefined
-    mem memory3 : @[Task1_Lab8.scala 34:23]
+    mem memory3 : @[Task1_Lab8.scala 35:23]
       data-type => UInt<32>
       depth => 1024
       read-latency => 0
@@ -158,7 +158,7 @@ circuit Task1_Lab8 :
       reader => io_memory_out_2_MPORT
       writer => MPORT_2
       read-under-write => undefined
-    mem memory4 : @[Task1_Lab8.scala 35:23]
+    mem memory4 : @[Task1_Lab8.scala 36:23]
       data-type => UInt<32>
       depth => 1024
       read-latency => 0
@@ -166,86 +166,86 @@ circuit Task1_Lab8 :
       reader => io_memory_out_3_MPORT
       writer => MPORT_3
       read-under-write => undefined
-    node _T = bits(arb_priority.io_out_bits, 0, 0) @[Task1_Lab8.scala 38:60]
-    node _T_1 = bits(arb_priority.io_out_bits, 1, 1) @[Task1_Lab8.scala 39:60]
-    node _T_2 = bits(arb_priority.io_out_bits, 2, 2) @[Task1_Lab8.scala 40:60]
-    node _T_3 = bits(arb_priority.io_out_bits, 3, 3) @[Task1_Lab8.scala 41:60]
-    node _GEN_0 = validif(io_write, io_Writeaddr) @[Task1_Lab8.scala 37:19]
-    node _GEN_1 = validif(io_write, clock) @[Task1_Lab8.scala 37:19]
-    node _GEN_2 = mux(io_write, UInt<1>("h1"), UInt<1>("h0")) @[Task1_Lab8.scala 37:19 Task1_Lab8.scala 32:23]
-    node _GEN_3 = validif(io_write, UInt<1>("h1")) @[Task1_Lab8.scala 37:19]
-    node _GEN_4 = validif(io_write, _T) @[Task1_Lab8.scala 37:19]
-    node _GEN_5 = validif(io_write, _T_1) @[Task1_Lab8.scala 37:19]
-    node _GEN_6 = validif(io_write, _T_2) @[Task1_Lab8.scala 37:19]
-    node _GEN_7 = validif(io_write, _T_3) @[Task1_Lab8.scala 37:19]
-    io_memory_out_0 <= memory1.io_memory_out_0_MPORT.data @[Task1_Lab8.scala 43:21]
-    io_memory_out_1 <= memory2.io_memory_out_1_MPORT.data @[Task1_Lab8.scala 44:21]
-    io_memory_out_2 <= memory3.io_memory_out_2_MPORT.data @[Task1_Lab8.scala 45:21]
-    io_memory_out_3 <= memory4.io_memory_out_3_MPORT.data @[Task1_Lab8.scala 46:21]
+    node _T = bits(arb_priority.io_out_bits, 0, 0) @[Task1_Lab8.scala 39:60]
+    node _T_1 = bits(arb_priority.io_out_bits, 1, 1) @[Task1_Lab8.scala 40:60]
+    node _T_2 = bits(arb_priority.io_out_bits, 2, 2) @[Task1_Lab8.scala 41:60]
+    node _T_3 = bits(arb_priority.io_out_bits, 3, 3) @[Task1_Lab8.scala 42:60]
+    node _GEN_0 = validif(io_write, io_Writeaddr) @[Task1_Lab8.scala 38:19]
+    node _GEN_1 = validif(io_write, clock) @[Task1_Lab8.scala 38:19]
+    node _GEN_2 = mux(io_write, UInt<1>("h1"), UInt<1>("h0")) @[Task1_Lab8.scala 38:19 Task1_Lab8.scala 33:23]
+    node _GEN_3 = validif(io_write, UInt<1>("h1")) @[Task1_Lab8.scala 38:19]
+    node _GEN_4 = validif(io_write, _T) @[Task1_Lab8.scala 38:19]
+    node _GEN_5 = validif(io_write, _T_1) @[Task1_Lab8.scala 38:19]
+    node _GEN_6 = validif(io_write, _T_2) @[Task1_Lab8.scala 38:19]
+    node _GEN_7 = validif(io_write, _T_3) @[Task1_Lab8.scala 38:19]
+    io_memory_out_0 <= memory1.io_memory_out_0_MPORT.data @[Task1_Lab8.scala 44:21]
+    io_memory_out_1 <= memory2.io_memory_out_1_MPORT.data @[Task1_Lab8.scala 45:21]
+    io_memory_out_2 <= memory3.io_memory_out_2_MPORT.data @[Task1_Lab8.scala 46:21]
+    io_memory_out_3 <= memory4.io_memory_out_3_MPORT.data @[Task1_Lab8.scala 47:21]
     io_requestor_0_ready <= queue1.io_enq_ready @[Decoupled.scala 299:17]
     io_requestor_1_ready <= queue2.io_enq_ready @[Decoupled.scala 299:17]
     io_requestor_2_ready <= queue3.io_enq_ready @[Decoupled.scala 299:17]
     io_requestor_3_ready <= queue4.io_enq_ready @[Decoupled.scala 299:17]
-    io_out_valid <= arb_priority.io_out_valid @[Task1_Lab8.scala 29:12]
-    io_out_bits <= bits(arb_priority.io_out_bits, 3, 0) @[Task1_Lab8.scala 29:12]
+    io_out_valid <= arb_priority.io_out_valid @[Task1_Lab8.scala 30:12]
+    io_out_bits <= bits(arb_priority.io_out_bits, 3, 0) @[Task1_Lab8.scala 30:12]
     queue1.clock <= clock
     queue1.reset <= reset
     queue1.io_enq_valid <= io_requestor_0_valid @[Decoupled.scala 297:22]
     queue1.io_enq_bits <= io_requestor_0_bits @[Decoupled.scala 298:21]
-    queue1.io_deq_ready <= arb_priority.io_in_0_ready @[Task1_Lab8.scala 25:12]
+    queue1.io_deq_ready <= arb_priority.io_in_0_ready @[Task1_Lab8.scala 27:27]
     queue2.clock <= clock
     queue2.reset <= reset
     queue2.io_enq_valid <= io_requestor_1_valid @[Decoupled.scala 297:22]
     queue2.io_enq_bits <= io_requestor_1_bits @[Decoupled.scala 298:21]
-    queue2.io_deq_ready <= arb_priority.io_in_1_ready @[Task1_Lab8.scala 26:12]
+    queue2.io_deq_ready <= arb_priority.io_in_1_ready @[Task1_Lab8.scala 26:27]
     queue3.clock <= clock
     queue3.reset <= reset
     queue3.io_enq_valid <= io_requestor_2_valid @[Decoupled.scala 297:22]
     queue3.io_enq_bits <= io_requestor_2_bits @[Decoupled.scala 298:21]
-    queue3.io_deq_ready <= arb_priority.io_in_2_ready @[Task1_Lab8.scala 27:12]
+    queue3.io_deq_ready <= arb_priority.io_in_2_ready @[Task1_Lab8.scala 28:27]
     queue4.clock <= clock
     queue4.reset <= reset
     queue4.io_enq_valid <= io_requestor_3_valid @[Decoupled.scala 297:22]
     queue4.io_enq_bits <= io_requestor_3_bits @[Decoupled.scala 298:21]
-    queue4.io_deq_ready <= arb_priority.io_in_3_ready @[Task1_Lab8.scala 28:12]
+    queue4.io_deq_ready <= arb_priority.io_in_3_ready @[Task1_Lab8.scala 29:27]
     arb_priority.clock <= clock
     arb_priority.reset <= reset
-    arb_priority.io_in_0_valid <= queue1.io_deq_valid @[Task1_Lab8.scala 25:12]
-    arb_priority.io_in_0_bits <= queue1.io_deq_bits @[Task1_Lab8.scala 25:12]
-    arb_priority.io_in_1_valid <= queue2.io_deq_valid @[Task1_Lab8.scala 26:12]
-    arb_priority.io_in_1_bits <= queue2.io_deq_bits @[Task1_Lab8.scala 26:12]
-    arb_priority.io_in_2_valid <= queue3.io_deq_valid @[Task1_Lab8.scala 27:12]
-    arb_priority.io_in_2_bits <= queue3.io_deq_bits @[Task1_Lab8.scala 27:12]
-    arb_priority.io_in_3_valid <= queue4.io_deq_valid @[Task1_Lab8.scala 28:12]
-    arb_priority.io_in_3_bits <= queue4.io_deq_bits @[Task1_Lab8.scala 28:12]
-    arb_priority.io_out_ready <= io_out_ready @[Task1_Lab8.scala 29:12]
-    memory1.io_memory_out_0_MPORT.addr <= io_Readaddr @[Task1_Lab8.scala 43:35]
-    memory1.io_memory_out_0_MPORT.en <= UInt<1>("h1") @[Task1_Lab8.scala 43:35]
-    memory1.io_memory_out_0_MPORT.clk <= clock @[Task1_Lab8.scala 43:35]
+    arb_priority.io_in_0_valid <= queue1.io_deq_valid @[Task1_Lab8.scala 27:27]
+    arb_priority.io_in_0_bits <= queue1.io_deq_bits @[Task1_Lab8.scala 27:27]
+    arb_priority.io_in_1_valid <= queue2.io_deq_valid @[Task1_Lab8.scala 26:27]
+    arb_priority.io_in_1_bits <= queue2.io_deq_bits @[Task1_Lab8.scala 26:27]
+    arb_priority.io_in_2_valid <= queue3.io_deq_valid @[Task1_Lab8.scala 28:27]
+    arb_priority.io_in_2_bits <= queue3.io_deq_bits @[Task1_Lab8.scala 28:27]
+    arb_priority.io_in_3_valid <= queue4.io_deq_valid @[Task1_Lab8.scala 29:27]
+    arb_priority.io_in_3_bits <= queue4.io_deq_bits @[Task1_Lab8.scala 29:27]
+    arb_priority.io_out_ready <= io_out_ready @[Task1_Lab8.scala 30:12]
+    memory1.io_memory_out_0_MPORT.addr <= io_Readaddr @[Task1_Lab8.scala 44:35]
+    memory1.io_memory_out_0_MPORT.en <= UInt<1>("h1") @[Task1_Lab8.scala 44:35]
+    memory1.io_memory_out_0_MPORT.clk <= clock @[Task1_Lab8.scala 44:35]
     memory1.MPORT.addr <= _GEN_0
     memory1.MPORT.en <= _GEN_2
     memory1.MPORT.clk <= _GEN_1
     memory1.MPORT.data <= _GEN_4
     memory1.MPORT.mask <= _GEN_3
-    memory2.io_memory_out_1_MPORT.addr <= io_Readaddr @[Task1_Lab8.scala 44:35]
-    memory2.io_memory_out_1_MPORT.en <= UInt<1>("h1") @[Task1_Lab8.scala 44:35]
-    memory2.io_memory_out_1_MPORT.clk <= clock @[Task1_Lab8.scala 44:35]
+    memory2.io_memory_out_1_MPORT.addr <= io_Readaddr @[Task1_Lab8.scala 45:35]
+    memory2.io_memory_out_1_MPORT.en <= UInt<1>("h1") @[Task1_Lab8.scala 45:35]
+    memory2.io_memory_out_1_MPORT.clk <= clock @[Task1_Lab8.scala 45:35]
     memory2.MPORT_1.addr <= _GEN_0
     memory2.MPORT_1.en <= _GEN_2
     memory2.MPORT_1.clk <= _GEN_1
     memory2.MPORT_1.data <= _GEN_5
     memory2.MPORT_1.mask <= _GEN_3
-    memory3.io_memory_out_2_MPORT.addr <= io_Readaddr @[Task1_Lab8.scala 45:35]
-    memory3.io_memory_out_2_MPORT.en <= UInt<1>("h1") @[Task1_Lab8.scala 45:35]
-    memory3.io_memory_out_2_MPORT.clk <= clock @[Task1_Lab8.scala 45:35]
+    memory3.io_memory_out_2_MPORT.addr <= io_Readaddr @[Task1_Lab8.scala 46:35]
+    memory3.io_memory_out_2_MPORT.en <= UInt<1>("h1") @[Task1_Lab8.scala 46:35]
+    memory3.io_memory_out_2_MPORT.clk <= clock @[Task1_Lab8.scala 46:35]
     memory3.MPORT_2.addr <= _GEN_0
     memory3.MPORT_2.en <= _GEN_2
     memory3.MPORT_2.clk <= _GEN_1
     memory3.MPORT_2.data <= _GEN_6
     memory3.MPORT_2.mask <= _GEN_3
-    memory4.io_memory_out_3_MPORT.addr <= io_Readaddr @[Task1_Lab8.scala 46:35]
-    memory4.io_memory_out_3_MPORT.en <= UInt<1>("h1") @[Task1_Lab8.scala 46:35]
-    memory4.io_memory_out_3_MPORT.clk <= clock @[Task1_Lab8.scala 46:35]
+    memory4.io_memory_out_3_MPORT.addr <= io_Readaddr @[Task1_Lab8.scala 47:35]
+    memory4.io_memory_out_3_MPORT.en <= UInt<1>("h1") @[Task1_Lab8.scala 47:35]
+    memory4.io_memory_out_3_MPORT.clk <= clock @[Task1_Lab8.scala 47:35]
     memory4.MPORT_3.addr <= _GEN_0
     memory4.MPORT_3.en <= _GEN_2
     memory4.MPORT_3.clk <= _GEN_1

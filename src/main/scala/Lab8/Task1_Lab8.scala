@@ -22,10 +22,11 @@ class Task1_Lab8 extends Module {
 
 
     val arb_priority = Module (new Arbiter(UInt(),4))
-    queue1 <> arb_priority.io.in(0) 
-    queue2 <> arb_priority.io.in(1) 
-    queue3 <> arb_priority.io.in(2) 
-    queue4 <> arb_priority.io.in(3)
+     
+    arb_priority.io.in(1) <> queue2
+    arb_priority.io.in(0) <> queue1
+    arb_priority.io.in(2) <> queue3
+    arb_priority.io.in(3) <> queue4
     io.out <> arb_priority.io.out
 
 
