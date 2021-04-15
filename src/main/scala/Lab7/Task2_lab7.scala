@@ -28,6 +28,8 @@ class Task2_lab7 (width : Int = 8) extends Module {
         }
     }.elsewhen(state_Reg === state2){
         when(io.start === false.B){
+            state_Reg := state1
+        }.otherwise{
             state1_Reg:=(state1_Reg << 1.U) | io.in
             io.out:=state1_Reg
             io.flag:=true.B

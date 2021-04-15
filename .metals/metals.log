@@ -10501,3 +10501,9 @@ WARNING: Unmatched cancel notification for request id 580
 [0m2021.04.15 17:55:21 WARN  no build target for: /home/monis/Desktop/chisel-quickstart/src/main/scala/Lab7/Task2_lab7.scala[0m
 [0m2021.04.15 17:55:25 WARN  no build target for: /home/monis/Desktop/chisel-quickstart/src/main/scala/Lab7/Task2_lab7.scala[0m
 [0m2021.04.15 17:55:58 WARN  no build target for: /home/monis/Desktop/chisel-quickstart/src/main/scala/Lab7/Task2_lab7.scala[0m
+[0m2021.04.15 22:22:54 WARN  no build target for: /home/monis/Desktop/chisel-quickstart/src/test/scala/Lab8/Task1_test.scala[0m
+[0m2021.04.15 22:23:17 WARN  no build target for: /home/monis/Desktop/chisel-quickstart/src/test/scala/Lab7/Task2_test.scala[0m
+[0m2021.04.15 22:31:55 WARN  no build target for: /home/monis/Desktop/chisel-quickstart/src/main/scala/Lab7/Task2_lab7.scala[0m
+[0m2021.04.15 22:34:05 WARN  no build target for: /home/monis/Desktop/chisel-quickstart/src/main/scala/Lab7/Task2_lab7.scala[0m
+[0m2021.04.15 22:36:07 WARN  no build target for: /home/monis/Desktop/chisel-quickstart/src/test/scala/Lab7/Task2_test.scala[0m
+[0m2021.04.15 22:36:18 WARN  no build target for: /home/monis/Desktop/chisel-quickstart/src/test/scala/Lab7/Task2_test.scala[0m
