@@ -1,7 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab8/Exercise2_Lab8.scala:19:39: value wrAddr is not a member of Lab8.Mem_Input[0m
-[0m[[0m[31merror[0m] [0m[0m    val doForwardReg = RegNext ( io . wrAddr === io . rdAddr && io .enable )[0m
-[0m[[0m[31merror[0m] [0m[0m                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab8/Exercise2_Lab8.scala:19:55: value rdAddr is not a member of Lab8.Mem_Input[0m
-[0m[[0m[31merror[0m] [0m[0m    val doForwardReg = RegNext ( io . wrAddr === io . rdAddr && io .enable )[0m
-[0m[[0m[31merror[0m] [0m[0m                                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monis/Desktop/chisel-quickstart/src/main/scala/Lab8/Exercise1_Lab8.scala:20:21: not found: value t[0m
+[0m[[0m[31merror[0m] [0m[0m    when(io.write===t){[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
