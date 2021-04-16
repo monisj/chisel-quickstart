@@ -16,8 +16,8 @@ class Exercise1_Lab8(width : Int = 8) extends Module {
     val mem = SyncReadMem (1024,Vec (4 ,UInt (width.W)))
     val mask_mem = Reg(Vec(4,UInt()))
 
-    val bits = Cat(io.mask(3),io.mask(2),io.mask(1),io.mask(0))
-    when(io.write){
+    val bits = Cat(io.mask(3),io.mask(2),io.mask(1),io.mask(0))        //Here a concatination was made of 4bits of mask to simulate
+    when(io.write){                                                    //The Behavior of tradition mask of SyncRead mem
         switch(bits){
             is(1.U){
                 mask_mem(0):=io.dataIn(0)
