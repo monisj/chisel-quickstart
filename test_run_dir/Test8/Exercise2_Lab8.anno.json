@@ -4,6 +4,20 @@
     "file":"test_run_dir/Test8/Exercise2_Lab8.lo.fir"
   },
   {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Exercise2_Lab8|Exercise2_Lab8>io_dataOut_1",
+    "sources":[
+      "~Exercise2_Lab8|Exercise2_Lab8>io_mask_1"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~Exercise2_Lab8|Exercise2_Lab8>io_dataOut_0",
+    "sources":[
+      "~Exercise2_Lab8|Exercise2_Lab8>io_mask_0"
+    ]
+  },
+  {
     "class":"firrtl.EmitCircuitAnnotation",
     "emitter":"firrtl.LowFirrtlEmitter"
   },
